@@ -1,0 +1,47 @@
+.chat {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.chat h2 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.chat textarea {
+  width: 100%;
+  min-height: 80px;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.chat-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.chat-controls select {
+  padding: 4px 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.chat-output {
+  white-space: pre-wrap;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
