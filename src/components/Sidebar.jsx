@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useWatchlist } from '../contexts/WatchlistContext'
 import './Sidebar.css'
@@ -5,6 +6,54 @@ import './Sidebar.css'
 function Sidebar() {
   const location = useLocation()
   const { watchlist } = useWatchlist()
+  
+  // Track X authentication state
+  const [xUser, setXUser] = useState(null)
+
+  // Check for logged-in user on component mount and when returning from auth
+  useEffect(() => {
+    const checkUser = () => {
+      const username = localStorage.getItem('x_username')
+      const userId = localStorage.getItem('x_user_id')
+      
+      if (username && userId) {
+        setXUser({ username, userId })
+      } else {
+        setXUser(null)
+      }
+    }
+    
+    // Check on mount
+    checkUser()
+    
+    // Listen for login events
+    window.addEventListener('x-user-login', checkUser)
+    
+    // Cleanup
+    return () => {
+      window.removeEventListener('x-user-login', checkUser)
+    }
+  }, [])
+
+  // Handle X login click
+  // Redirect to backend OAuth endpoint which handles the full OAuth flow securely
+  const handleXLogin = () => {
+    const backendUrl = 'http://localhost:8080'
+    
+    // Store the return URL so we can redirect back after authentication
+    localStorage.setItem('x_oauth_return_url', window.location.href)
+    
+    // Redirect to backend OAuth login endpoint
+    // Backend will handle state generation, PKCE, and redirect to Twitter
+    window.location.href = `${backendUrl}/auth/login`
+  }
+
+  // Handle logout
+  const handleXLogout = () => {
+    localStorage.removeItem('x_username')
+    localStorage.removeItem('x_user_id')
+    setXUser(null)
+  }
 
   return (
     <aside className="sidebar">
@@ -32,7 +81,42 @@ function Sidebar() {
           <span className="nav-icon">💬</span>
           <span className="nav-label">Agent Analyst</span>
         </Link>
+        <Link to="/social" className={`nav-item ${location.pathname === '/social' ? 'active' : ''}`}>
+          <span className="nav-icon">📱</span>
+          <span className="nav-label">Social Data</span>
+        </Link>
       </nav>
+
+      <div className="sidebar-section">
+        <h3 className="section-title">Account</h3>
+        {xUser ? (
+          <div className="x-user-info">
+            <div className="x-user-details">
+              <span className="x-icon">𝕏</span>
+              <div className="x-user-text">
+                <div className="x-username">@{xUser.username}</div>
+                <div className="x-status">Logged in</div>
+              </div>
+            </div>
+            <button 
+              onClick={handleXLogout}
+              className="x-logout-button"
+              type="button"
+            >
+              Logout
+            </button>
+          </div>
+        ) : (
+          <button 
+            onClick={handleXLogin}
+            className="x-login-button"
+            type="button"
+          >
+            <span className="login-icon">𝕏</span>
+            <span className="login-label">Login with X</span>
+          </button>
+        )}
+      </div>
     </aside>
   )
 }

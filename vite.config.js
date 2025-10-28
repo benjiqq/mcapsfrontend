@@ -5,15 +5,18 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3000,
+    port: 5173,
+    strictPort: true,
     proxy: {
       // Proxy API calls to backend server
-      '/snapshots': 'http://localhost:8000',
-      '/coins': 'http://localhost:8000',
-      '/assets': 'http://localhost:8000',
-      '/chat': 'http://localhost:8000',
-      '/analyze': 'http://localhost:8000',
-      '/health': 'http://localhost:8000'
+      '/snapshots': 'http://localhost:8080',
+      '/coins': 'http://localhost:8080',
+      '/assets': 'http://localhost:8080',
+      '/chat': 'http://localhost:8080',
+      '/analyze': 'http://localhost:8080',
+      '/health': 'http://localhost:8080',
+      '/x': 'http://localhost:8080',
+      '/watchlist': 'http://localhost:8080'
     },
     // Configure proxy to handle /assets/count properly
     define: {

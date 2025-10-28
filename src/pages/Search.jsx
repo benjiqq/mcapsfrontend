@@ -20,7 +20,8 @@ function Search() {
         if (stored) {
           const parsed = JSON.parse(stored)
         console.log('Parsed assets:', parsed.length, 'items')
-        if (Array.isArray(parsed) && parsed.length > 0) {
+        // Only use localStorage if we have a reasonable amount of data (at least 100 assets)
+        if (Array.isArray(parsed) && parsed.length >= 100) {
           console.log('Loaded from localStorage, first asset:', JSON.stringify(parsed[0], null, 2))
           console.log('First asset name:', parsed[0]?.name)
           console.log('First asset symbol:', parsed[0]?.symbol)
@@ -33,7 +34,7 @@ function Search() {
         console.error('Error loading assets from localStorage:', error)
       }
 
-      // If no localStorage data, fetch from API
+      // If no localStorage data or insufficient data, fetch from API
       console.log('Fetching assets from API...')
       try {
         setLoading(true)
@@ -41,6 +42,8 @@ function Search() {
         console.log('Fetched assets:', fetchedAssets.length, 'items')
         console.log('First fetched asset:', fetchedAssets[0])
         setAssets(fetchedAssets)
+        // Store in localStorage for future use
+        localStorage.setItem('assets', JSON.stringify(fetchedAssets))
       } catch (error) {
         console.error('Error fetching assets:', error)
       } finally {

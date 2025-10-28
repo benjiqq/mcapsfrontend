@@ -122,6 +122,113 @@
   text-align: center;
 }
 
+/* X Login Button Styles */
+.x-login-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.x-login-button:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+.x-login-button:active {
+  transform: translateY(0);
+}
+
+.login-icon {
+  font-size: 18px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.login-label {
+  flex: 1;
+  text-align: left;
+}
+
+/* X User Info (Logged In) */
+.x-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.x-user-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+
+.x-icon {
+  font-size: 18px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.x-user-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.x-username {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.x-status {
+  font-size: 11px;
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.x-logout-button {
+  width: 100%;
+  padding: 8px 12px;
+  background: white;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.x-logout-button:hover {
+  background: #f5f5f5;
+  border-color: #999;
+  color: #333;
+}
+
+.x-logout-button:active {
+  transform: scale(0.98);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .sidebar {
@@ -142,6 +249,11 @@
 
   .nav-item {
     justify-content: center;
+  }
+
+  /* Hide login button on mobile for now - can be accessed via menu */
+  .x-login-button {
+    display: none;
   }
 }
 
