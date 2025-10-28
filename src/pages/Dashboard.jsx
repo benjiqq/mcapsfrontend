@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
-import PriceTable from '../components/PriceTable'
+import AssetTable from '../components/AssetTable'
+import { useStats } from '../contexts/StatsContext'
+import { fetchAssetsData } from '../api'
 import './Dashboard.css'
 
 function Dashboard() {
   // State for snapshot and price data
   const [snapshot, setSnapshot] = useState(null)
   const [prices, setPrices] = useState([])
-  const [limit, setLimit] = useState(100)
+  const { totalCount, setTotalCount } = useStats()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -15,68 +17,50 @@ function Dashboard() {
     setLoading(true)
     setError('')
     try {
-      // Get coins data from the coins table
-      const coinsRes = await fetch(`/coins?limit=${limit}`)
-      if (!coinsRes.ok) throw new Error(`HTTP ${coinsRes.status}`)
-      const coinsData = await coinsRes.json()
+      const data = await fetchAssetsData()
       
-      if (!coinsData.length) {
-        setSnapshot(null)
-        setPrices([])
-        setError('No coins data available')
-        return
-      }
-
-      // Set snapshot info (for display purposes)
-      setSnapshot({
-        id: 'coins',
-        created_at: new Date().toISOString(),
-        vs_currency: 'usd'
-      })
-
-      setPrices(coinsData)
+      // Update total count
+      setTotalCount(data.count)
+      
+      // Update snapshot and prices
+      setSnapshot(data.snapshot)
+      setPrices(data.assets)
     } catch (e) {
       setError(e.message || String(e))
+      setSnapshot(null)
+      setPrices([])
     } finally {
       setLoading(false)
     }
   }
 
-  // Load data on mount and when limit changes
+  // Load data on mount
   useEffect(() => {
     fetchData()
-  }, [limit])
+  }, [])
 
   return (
     <div className="dashboard">
       <header className="page-header">
-        <h1>Crypto Coins Database</h1>
-        {prices.length > 0 && (
-          <span className="muted">
-            Showing {prices.length} coins with stored data
-          </span>
-        )}
+        <div>
+          <h1>Crypto Coins Database</h1>
+          {totalCount > 0 && (
+            <span className="muted">
+              Total Assets: {totalCount}
+            </span>
+          )}
+        </div>
       </header>
 
       <div className="toolbar">
         <button onClick={fetchData} disabled={loading}>
           Refresh
         </button>
-        <label>
-          Limit{' '}
-          <input
-            type="number"
-            value={limit}
-            onChange={(e) => setLimit(Number(e.target.value) || 100)}
-            min="1"
-            max="100"
-          />
-        </label>
         {loading && <span className="loading">Loading...</span>}
         {error && <span className="error">{error}</span>}
       </div>
 
-      <PriceTable prices={prices} />
+      <AssetTable prices={prices} />
     </div>
   )
 }

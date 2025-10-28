@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { sendChatMessage } from '../api'
 import './ChatSection.css'
 
 function ChatSection() {
@@ -18,11 +19,8 @@ function ChatSection() {
     setReply('')
 
     try {
-      const url = `/chat?message=${encodeURIComponent(msg)}&vs_currency=${encodeURIComponent(vsCurrency)}`
-      const res = await fetch(url, { method: 'POST' })
-      if (!res.ok) throw new Error(`HTTP ${res.status}`)
-      const data = await res.json()
-      setReply(data.reply || 'No reply')
+      const response = await sendChatMessage(msg, vsCurrency)
+      setReply(response)
     } catch (e) {
       setError(e.message || String(e))
     } finally {
