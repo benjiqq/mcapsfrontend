@@ -1,8 +1,11 @@
 // API functions for fetching cryptocurrency data
 
+// Base URL for production API
+const API_BASE = 'https://api.mcaps.com';
+
 // Fetch the total count of assets
 export async function fetchAssetsCount() {
-  const response = await fetch('/assets/count')
+  const response = await fetch(`${API_BASE}/assets/count`)
   if (!response.ok) {
     throw new Error(`Failed to fetch assets count: HTTP ${response.status}`)
   }
@@ -12,7 +15,7 @@ export async function fetchAssetsCount() {
 
 // Fetch all assets data
 export async function fetchAllAssets() {
-  const response = await fetch('/assets')
+  const response = await fetch(`${API_BASE}/assets`)
   if (!response.ok) {
     throw new Error(`Failed to fetch assets: HTTP ${response.status}`)
   }
@@ -49,7 +52,7 @@ export async function fetchAssetsData() {
 
 // Send chat message to the chat API
 export async function sendChatMessage(message, vsCurrency = 'usd') {
-  const url = `/chat?message=${encodeURIComponent(message)}&vs_currency=${encodeURIComponent(vsCurrency)}`
+  const url = `${API_BASE}/chat?message=${encodeURIComponent(message)}&vs_currency=${encodeURIComponent(vsCurrency)}`
   const response = await fetch(url, { method: 'POST' })
   
   if (!response.ok) {
