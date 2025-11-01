@@ -1,7 +1,21 @@
 // API functions for fetching cryptocurrency data
 
-// Base URL for production API
-const API_BASE = 'https://api.mcaps.com';
+// Base URL - use localhost in development, production URL otherwise
+// Detect local development by checking hostname and port
+const isLocalDevelopment = 
+  window.location.hostname === 'localhost' || 
+  window.location.hostname === '127.0.0.1' ||
+  window.location.port === '5173' || // Vite dev server default port
+  window.location.port === '3000';    // Common React dev server port
+
+const API_BASE = isLocalDevelopment
+  ? 'http://localhost:8080'
+  : 'https://api.mcaps.com';
+
+// Log API base URL in development for debugging
+if (isLocalDevelopment) {
+  console.log('Using local API:', API_BASE);
+}
 
 // Fetch the total count of assets
 export async function fetchAssetsCount() {
@@ -48,6 +62,19 @@ export async function fetchAssetsData() {
   } catch (error) {
     throw new Error(error.message || 'Failed to fetch assets data')
   }
+}
+
+// Fetch asset details by asset ID
+export async function fetchAssetDetails(assetId) {
+  const response = await fetch(`${API_BASE}/assets/${assetId}/details`)
+  if (!response.ok) {
+    if (response.status === 404) {
+      throw new Error(`Asset not found: ${assetId}`)
+    }
+    throw new Error(`Failed to fetch asset details: HTTP ${response.status}`)
+  }
+  const data = await response.json()
+  return data
 }
 
 // Send chat message to the chat API

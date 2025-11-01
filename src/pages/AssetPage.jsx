@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useWatchlist } from '../contexts/WatchlistContext'
+import { fetchAssetDetails } from '../api'
 import './AssetPage.css'
 
 function AssetPage() {
@@ -10,8 +11,11 @@ function AssetPage() {
   const ASSETS_KEY = 'assets'
   
   const [asset, setAsset] = useState(null)
+  const [assetDetails, setAssetDetails] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [loadingDetails, setLoadingDetails] = useState(false)
   const [error, setError] = useState('')
+  const [detailsError, setDetailsError] = useState('')
 
   useEffect(() => {
     // Load asset from localStorage
@@ -23,6 +27,24 @@ function AssetPage() {
         if (foundAsset) {
           setAsset(foundAsset)
           setLoading(false)
+          
+          // Fetch detailed asset information from API
+          if (coinId) {
+            setLoadingDetails(true)
+            setDetailsError('')
+            console.log('Fetching asset details for:', coinId)
+            fetchAssetDetails(coinId)
+              .then(data => {
+                console.log('Asset details received:', data)
+                setAssetDetails(data)
+                setLoadingDetails(false)
+              })
+              .catch(err => {
+                console.error('Error fetching asset details:', err)
+                setDetailsError(err.message || 'Failed to fetch asset details')
+                setLoadingDetails(false)
+              })
+          }
           return
         }
       }
@@ -185,12 +207,93 @@ function AssetPage() {
           </div>
         </div>
 
+        {assetDetails && assetDetails.full_data && (
+          <>
+            {assetDetails.full_data.description && assetDetails.full_data.description.en && (
+              <div className="asset-raw-data">
+                <h2>Description</h2>
+                <div className="raw-data-content" style={{ whiteSpace: 'pre-wrap', fontSize: '14px', lineHeight: '1.6' }}>
+                  {assetDetails.full_data.description.en}
+                </div>
+              </div>
+            )}
+
+            <div className="asset-raw-data">
+              <h2>Asset Platform ID</h2>
+              <div className="raw-data-content" style={{ fontSize: '14px' }}>
+                {assetDetails.asset_platform_id && 
+                 assetDetails.asset_platform_id !== 'None' && 
+                 assetDetails.asset_platform_id !== 'null' && 
+                 assetDetails.asset_platform_id !== null
+                  ? assetDetails.asset_platform_id
+                  : 'N/A'}
+              </div>
+            </div>
+
+            {assetDetails.full_data.categories && assetDetails.full_data.categories.length > 0 && (
+              <div className="asset-raw-data">
+                <h2>Categories</h2>
+                <div className="raw-data-content" style={{ fontSize: '14px' }}>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {assetDetails.full_data.categories.map((category, index) => (
+                      <span 
+                        key={index}
+                        style={{
+                          background: '#e3f2fd',
+                          color: '#1976d2',
+                          padding: '6px 12px',
+                          borderRadius: '16px',
+                          fontSize: '13px',
+                          fontWeight: '500'
+                        }}
+                      >
+                        {category}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+          </>
+        )}
+
         <div className="asset-raw-data">
-          <h2>Raw Data</h2>
+          <h2>Basic Raw Data</h2>
           <pre className="raw-data-content">
             {JSON.stringify(asset, null, 2)}
           </pre>
         </div>
+
+        {loadingDetails && (
+          <div className="asset-raw-data">
+            <h2>Asset Details Raw Data</h2>
+            <div className="raw-data-content">
+              <p>Loading asset details...</p>
+            </div>
+          </div>
+        )}
+
+        {detailsError && !loadingDetails && (
+          <div className="asset-raw-data">
+            <h2>Asset Details Raw Data</h2>
+            <div className="raw-data-content">
+              <p style={{ color: '#f44336' }}>Error: {detailsError}</p>
+              <p style={{ fontSize: '12px', color: '#666', marginTop: '8px' }}>
+                Note: Asset details may not be available if they haven't been fetched yet.
+                Try running: python update_details.py {coinId}
+              </p>
+            </div>
+          </div>
+        )}
+
+        {assetDetails && !loadingDetails && (
+          <div className="asset-raw-data">
+            <h2>Asset Details Raw Data</h2>
+            <pre className="raw-data-content">
+              {JSON.stringify(assetDetails, null, 2)}
+            </pre>
+          </div>
+        )}
       </div>
     </div>
   )

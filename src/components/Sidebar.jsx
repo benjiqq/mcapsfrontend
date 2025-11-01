@@ -38,7 +38,15 @@ function Sidebar() {
   // Handle X login click
   // Redirect to backend OAuth endpoint which handles the full OAuth flow securely
   const handleXLogin = () => {
-    const backendUrl = 'http://localhost:8080'
+    // Use local backend when running locally, production API otherwise
+    const isLocalDevelopment = 
+      window.location.hostname === 'localhost' || 
+      window.location.hostname === '127.0.0.1' ||
+      window.location.port === '5173' ||
+      window.location.port === '3000';
+    const backendUrl = isLocalDevelopment
+      ? 'http://localhost:8080'
+      : 'https://api.mcaps.com';
     
     // Store the return URL so we can redirect back after authentication
     localStorage.setItem('x_oauth_return_url', window.location.href)
@@ -81,13 +89,13 @@ function Sidebar() {
           <span className="nav-icon">💬</span>
           <span className="nav-label">Agent Analyst</span>
         </Link>
-        <Link to="/social" className={`nav-item ${location.pathname === '/social' ? 'active' : ''}`}>
+        {/* <Link to="/social" className={`nav-item ${location.pathname === '/social' ? 'active' : ''}`}>
           <span className="nav-icon">📱</span>
           <span className="nav-label">Social Data</span>
-        </Link>
+        </Link> */}
       </nav>
 
-      <div className="sidebar-section">
+      {/* <div className="sidebar-section">
         <h3 className="section-title">Account</h3>
         {xUser ? (
           <div className="x-user-info">
@@ -116,7 +124,7 @@ function Sidebar() {
             <span className="login-label">Login with X</span>
           </button>
         )}
-      </div>
+      </div> */}
     </aside>
   )
 }
