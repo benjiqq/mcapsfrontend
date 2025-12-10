@@ -18,7 +18,8 @@ function App() {
         
         <div className="main-content">
           <Routes>
-            <Route path="/" element={<AssetList />} />
+            <Route path="/" element={<DashboardWidget />} />
+            {/* <Route path="/" element={<AssetList />} /> */}
             <Route path="/search" element={<Search />} />
             <Route path="/watchlist" element={<Watchlist />} />
             <Route path="/chat" element={<Chat />} />
