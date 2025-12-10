@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import AssetTable from '../components/AssetTable'
 import { useStats } from '../contexts/StatsContext'
 import { fetchAssetsData } from '../api'
-import './Dashboard.css'
+import './AssetList.css'
 
-function Dashboard() {
+function AssetList() {
   // State for snapshot and price data
   const [snapshot, setSnapshot] = useState(null)
   const [prices, setPrices] = useState([])
@@ -40,7 +40,7 @@ function Dashboard() {
   }, [])
 
   return (
-    <div className="dashboard">
+    <div className="assetlist">
       <header className="page-header">
         <div>
           <h1>Crypto Coins Database</h1>
@@ -65,5 +65,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard
-
+export default AssetList

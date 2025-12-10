@@ -7,61 +7,62 @@ function Sidebar() {
   const location = useLocation()
   const { watchlist } = useWatchlist()
   
+  // X login functionality commented out
   // Track X authentication state
-  const [xUser, setXUser] = useState(null)
+  // const [xUser, setXUser] = useState(null)
 
   // Check for logged-in user on component mount and when returning from auth
-  useEffect(() => {
-    const checkUser = () => {
-      const username = localStorage.getItem('x_username')
-      const userId = localStorage.getItem('x_user_id')
-      
-      if (username && userId) {
-        setXUser({ username, userId })
-      } else {
-        setXUser(null)
-      }
-    }
-    
-    // Check on mount
-    checkUser()
-    
-    // Listen for login events
-    window.addEventListener('x-user-login', checkUser)
-    
-    // Cleanup
-    return () => {
-      window.removeEventListener('x-user-login', checkUser)
-    }
-  }, [])
+  // useEffect(() => {
+  //   const checkUser = () => {
+  //     const username = localStorage.getItem('x_username')
+  //     const userId = localStorage.getItem('x_user_id')
+  //     
+  //     if (username && userId) {
+  //       setXUser({ username, userId })
+  //     } else {
+  //       setXUser(null)
+  //     }
+  //   }
+  //   
+  //   // Check on mount
+  //   checkUser()
+  //   
+  //   // Listen for login events
+  //   window.addEventListener('x-user-login', checkUser)
+  //   
+  //   // Cleanup
+  //   return () => {
+  //     window.removeEventListener('x-user-login', checkUser)
+  //   }
+  // }, [])
 
   // Handle X login click
   // Redirect to backend OAuth endpoint which handles the full OAuth flow securely
-  const handleXLogin = () => {
-    // Use local backend when running locally, production API otherwise
-    const isLocalDevelopment = 
-      window.location.hostname === 'localhost' || 
-      window.location.hostname === '127.0.0.1' ||
-      window.location.port === '5173' ||
-      window.location.port === '3000';
-    const backendUrl = isLocalDevelopment
-      ? 'http://localhost:8080'
-      : 'https://api.mcaps.com';
-    
-    // Store the return URL so we can redirect back after authentication
-    localStorage.setItem('x_oauth_return_url', window.location.href)
-    
-    // Redirect to backend OAuth login endpoint
-    // Backend will handle state generation, PKCE, and redirect to Twitter
-    window.location.href = `${backendUrl}/auth/login`
-  }
+  // const handleXLogin = () => {
+  //   // Use local backend when running locally, production API otherwise
+  //   const isLocalDevelopment = 
+  //     window.location.hostname === 'localhost' || 
+  //     window.location.hostname === '127.0.0.1' ||
+  //     window.location.port === '5173' ||
+  //     window.location.port === '3000';
+  //   const backendUrl = isLocalDevelopment
+  //     ? 'http://localhost:8080'
+  //     : 'https://api.mcaps.com';
+  //   
+  //   // Store the return URL so we can redirect back after authentication
+  //   localStorage.setItem('x_oauth_return_url', window.location.href)
+  //   
+  //   // Redirect to backend OAuth login endpoint
+  //   // Backend will handle state generation, PKCE, and redirect to Twitter
+  //   window.location.href = `${backendUrl}/auth/login`
+  // }
 
   // Handle logout
-  const handleXLogout = () => {
-    localStorage.removeItem('x_username')
-    localStorage.removeItem('x_user_id')
-    setXUser(null)
-  }
+  // const handleXLogout = () => {
+  //   localStorage.removeItem('x_username')
+  //   localStorage.removeItem('x_user_id')
+  //   setXUser(null)
+  // }
 
   return (
     <aside className="sidebar">
@@ -70,7 +71,8 @@ function Sidebar() {
       </div>
 
       <nav className="sidebar-nav">
-        <Link to="/" className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
+        {/* Commented out original nav items */}
+        {/* <Link to="/" className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
           <span className="nav-icon">📊</span>
           <span className="nav-label">Markets</span>
         </Link>
@@ -89,12 +91,18 @@ function Sidebar() {
           <span className="nav-icon">💬</span>
           <span className="nav-label">Agent Analyst</span>
         </Link>
-        {/* <Link to="/social" className={`nav-item ${location.pathname === '/social' ? 'active' : ''}`}>
+        <Link to="/social" className={`nav-item ${location.pathname === '/social' ? 'active' : ''}`}>
           <span className="nav-icon">📱</span>
           <span className="nav-label">Social Data</span>
         </Link> */}
+        
+        <Link to="/dashboardwidget" className={`nav-item ${location.pathname === '/dashboardwidget' ? 'active' : ''}`}>
+          <span className="nav-icon">📊</span>
+          <span className="nav-label">Dashboard Widget</span>
+        </Link>
       </nav>
 
+      {/* X login section commented out */}
       {/* <div className="sidebar-section">
         <h3 className="section-title">Account</h3>
         {xUser ? (

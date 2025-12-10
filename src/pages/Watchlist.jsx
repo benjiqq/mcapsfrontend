@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { useWatchlist } from '../contexts/WatchlistContext'
 import AssetTable from '../components/AssetTable'
-import './Dashboard.css'
+import './AssetList.css'
 
 function Watchlist() {
   const { watchlist } = useWatchlist()
 
   return (
-    <div className="dashboard">
+    <div className="assetlist">
       <header className="page-header">
         <div>
           <h1>Watchlist</h1>
