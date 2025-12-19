@@ -20,7 +20,7 @@ const API_BASE = isLocalDevelopment
  */
 export async function fetchBitcoinPrice(vsCurrency = 'usd') {
   try {
-    const url = `${API_BASE}/api/price/bitcoin?vs_currency=${encodeURIComponent(vsCurrency)}`
+    const url = `${API_BASE}/price/bitcoin?vs_currency=${encodeURIComponent(vsCurrency)}`
     const response = await fetch(url)
     
     if (!response.ok) {
@@ -41,7 +41,7 @@ export async function fetchBitcoinPrice(vsCurrency = 'usd') {
  */
 export async function fetchEthereumPrice(vsCurrency = 'usd') {
   try {
-    const url = `${API_BASE}/api/price/ethereum?vs_currency=${encodeURIComponent(vsCurrency)}`
+    const url = `${API_BASE}/price/ethereum?vs_currency=${encodeURIComponent(vsCurrency)}`
     const response = await fetch(url)
     
     if (!response.ok) {
@@ -62,7 +62,7 @@ export async function fetchEthereumPrice(vsCurrency = 'usd') {
  */
 export async function fetchXRPPrice(vsCurrency = 'usd') {
   try {
-    const url = `${API_BASE}/api/price/xrp?vs_currency=${encodeURIComponent(vsCurrency)}`
+    const url = `${API_BASE}/price/xrp?vs_currency=${encodeURIComponent(vsCurrency)}`
     const response = await fetch(url)
     
     if (!response.ok) {
@@ -83,7 +83,7 @@ export async function fetchXRPPrice(vsCurrency = 'usd') {
  */
 export async function fetchSolanaPrice(vsCurrency = 'usd') {
   try {
-    const url = `${API_BASE}/api/price/solana?vs_currency=${encodeURIComponent(vsCurrency)}`
+    const url = `${API_BASE}/price/solana?vs_currency=${encodeURIComponent(vsCurrency)}`
     const response = await fetch(url)
     
     if (!response.ok) {

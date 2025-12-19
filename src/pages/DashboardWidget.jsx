@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { fetchBitcoinPrice, fetchEthereumPrice, fetchXRPPrice, fetchSolanaPrice } from '../cg'
+import { fetchCoinPrice } from '../api'
 import './DashboardWidget.css'
 
 function DashboardWidget() {
@@ -20,12 +20,12 @@ function DashboardWidget() {
       setError('')
       setLoading(true)
       
-      // Fetch all prices in parallel
+      // Fetch all prices in parallel using the unified API endpoint
       const [btcData, ethData, xrpData, solData] = await Promise.all([
-        fetchBitcoinPrice('usd'),
-        fetchEthereumPrice('usd'),
-        fetchXRPPrice('usd'),
-        fetchSolanaPrice('usd')
+        fetchCoinPrice('bitcoin', 'usd'),
+        fetchCoinPrice('ethereum', 'usd'),
+        fetchCoinPrice('xrp', 'usd'),
+        fetchCoinPrice('solana', 'usd')
       ])
       
       setPrices({

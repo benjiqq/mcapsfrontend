@@ -90,3 +90,22 @@ export async function sendChatMessage(message, vsCurrency = 'usd') {
   return data.reply || 'No reply'
 }
 
+// Fetch coin price from mcaps API
+// Returns: { price, change24h, currency }
+export async function fetchCoinPrice(coinId, vsCurrency = 'usd') {
+  // Build URL - only add vs_currency query param if not default USD
+  const url = vsCurrency.toLowerCase() === 'usd'
+    ? `${API_BASE}/price/${encodeURIComponent(coinId)}`
+    : `${API_BASE}/price/${encodeURIComponent(coinId)}?vs_currency=${encodeURIComponent(vsCurrency)}`
+  
+  const response = await fetch(url)
+  if (!response.ok) {
+    if (response.status === 404) {
+      throw new Error(`Price data not found for coin: ${coinId}`)
+    }
+    throw new Error(`Failed to fetch price for ${coinId}: HTTP ${response.status}`)
+  }
+  const data = await response.json()
+  return data
+}
+
