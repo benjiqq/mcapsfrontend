@@ -98,7 +98,7 @@ function Sidebar() {
         
         <Link to="/dashboardwidget" className={`nav-item ${location.pathname === '/dashboardwidget' ? 'active' : ''}`}>
           <span className="nav-icon">📊</span>
-          <span className="nav-label">Dashboard Widget</span>
+          <span className="nav-label">Dashboard</span>
         </Link>
       </nav>
 

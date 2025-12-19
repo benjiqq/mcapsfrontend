@@ -1,147 +1,97 @@
 // CoinGecko API client for fetching cryptocurrency prices
-// Frontend-only implementation
+// Uses backend API endpoints to avoid CORS issues
 
-const COINGECKO_API_BASE = 'https://api.coingecko.com/api/v3'
+// Base URL - use localhost in development, production URL otherwise
+// Detect local development by checking hostname and port
+const isLocalDevelopment = 
+  window.location.hostname === 'localhost' || 
+  window.location.hostname === '127.0.0.1' ||
+  window.location.port === '5173' || // Vite dev server default port
+  window.location.port === '3000';    // Common React dev server port
+
+const API_BASE = isLocalDevelopment
+  ? 'http://localhost:8080'
+  : 'https://api.mcaps.com';
 
 /**
- * Fetch Bitcoin price from CoinGecko API
+ * Fetch Bitcoin price from backend API (which proxies CoinGecko)
  * @param {string} vsCurrency - The currency to convert to (default: 'usd')
- * @returns {Promise<Object>} Price data with usd property
+ * @returns {Promise<Object>} Price data with price, change24h, and currency properties
  */
 export async function fetchBitcoinPrice(vsCurrency = 'usd') {
   try {
-    const url = `${COINGECKO_API_BASE}/simple/price`
-    const params = new URLSearchParams({
-      ids: 'bitcoin',
-      vs_currencies: vsCurrency,
-      include_24hr_change: 'true'
-    })
-    
-    const response = await fetch(`${url}?${params.toString()}`)
+    const url = `${API_BASE}/api/price/bitcoin?vs_currency=${encodeURIComponent(vsCurrency)}`
+    const response = await fetch(url)
     
     if (!response.ok) {
-      throw new Error(`CoinGecko API error: ${response.status}`)
+      throw new Error(`API error: ${response.status}`)
     }
     
     const data = await response.json()
-    
-    if (!data.bitcoin) {
-      throw new Error('Bitcoin price data not found in response')
-    }
-    
-    return {
-      price: data.bitcoin[vsCurrency],
-      change24h: data.bitcoin[`${vsCurrency}_24h_change`],
-      currency: vsCurrency.toUpperCase()
-    }
+    return data
   } catch (error) {
     throw new Error(`Failed to fetch Bitcoin price: ${error.message}`)
   }
 }
 
 /**
- * Fetch Ethereum price from CoinGecko API
+ * Fetch Ethereum price from backend API (which proxies CoinGecko)
  * @param {string} vsCurrency - The currency to convert to (default: 'usd')
- * @returns {Promise<Object>} Price data with usd property
+ * @returns {Promise<Object>} Price data with price, change24h, and currency properties
  */
 export async function fetchEthereumPrice(vsCurrency = 'usd') {
   try {
-    const url = `${COINGECKO_API_BASE}/simple/price`
-    const params = new URLSearchParams({
-      ids: 'ethereum',
-      vs_currencies: vsCurrency,
-      include_24hr_change: 'true'
-    })
-    
-    const response = await fetch(`${url}?${params.toString()}`)
+    const url = `${API_BASE}/api/price/ethereum?vs_currency=${encodeURIComponent(vsCurrency)}`
+    const response = await fetch(url)
     
     if (!response.ok) {
-      throw new Error(`CoinGecko API error: ${response.status}`)
+      throw new Error(`API error: ${response.status}`)
     }
     
     const data = await response.json()
-    
-    if (!data.ethereum) {
-      throw new Error('Ethereum price data not found in response')
-    }
-    
-    return {
-      price: data.ethereum[vsCurrency],
-      change24h: data.ethereum[`${vsCurrency}_24h_change`],
-      currency: vsCurrency.toUpperCase()
-    }
+    return data
   } catch (error) {
     throw new Error(`Failed to fetch Ethereum price: ${error.message}`)
   }
 }
 
 /**
- * Fetch XRP price from CoinGecko API
+ * Fetch XRP price from backend API (which proxies CoinGecko)
  * @param {string} vsCurrency - The currency to convert to (default: 'usd')
- * @returns {Promise<Object>} Price data with usd property
+ * @returns {Promise<Object>} Price data with price, change24h, and currency properties
  */
 export async function fetchXRPPrice(vsCurrency = 'usd') {
   try {
-    const url = `${COINGECKO_API_BASE}/simple/price`
-    const params = new URLSearchParams({
-      ids: 'ripple',
-      vs_currencies: vsCurrency,
-      include_24hr_change: 'true'
-    })
-    
-    const response = await fetch(`${url}?${params.toString()}`)
+    const url = `${API_BASE}/api/price/xrp?vs_currency=${encodeURIComponent(vsCurrency)}`
+    const response = await fetch(url)
     
     if (!response.ok) {
-      throw new Error(`CoinGecko API error: ${response.status}`)
+      throw new Error(`API error: ${response.status}`)
     }
     
     const data = await response.json()
-    
-    if (!data.ripple) {
-      throw new Error('XRP price data not found in response')
-    }
-    
-    return {
-      price: data.ripple[vsCurrency],
-      change24h: data.ripple[`${vsCurrency}_24h_change`],
-      currency: vsCurrency.toUpperCase()
-    }
+    return data
   } catch (error) {
     throw new Error(`Failed to fetch XRP price: ${error.message}`)
   }
 }
 
 /**
- * Fetch Solana price from CoinGecko API
+ * Fetch Solana price from backend API (which proxies CoinGecko)
  * @param {string} vsCurrency - The currency to convert to (default: 'usd')
- * @returns {Promise<Object>} Price data with usd property
+ * @returns {Promise<Object>} Price data with price, change24h, and currency properties
  */
 export async function fetchSolanaPrice(vsCurrency = 'usd') {
   try {
-    const url = `${COINGECKO_API_BASE}/simple/price`
-    const params = new URLSearchParams({
-      ids: 'solana',
-      vs_currencies: vsCurrency,
-      include_24hr_change: 'true'
-    })
-    
-    const response = await fetch(`${url}?${params.toString()}`)
+    const url = `${API_BASE}/api/price/solana?vs_currency=${encodeURIComponent(vsCurrency)}`
+    const response = await fetch(url)
     
     if (!response.ok) {
-      throw new Error(`CoinGecko API error: ${response.status}`)
+      throw new Error(`API error: ${response.status}`)
     }
     
     const data = await response.json()
-    
-    if (!data.solana) {
-      throw new Error('Solana price data not found in response')
-    }
-    
-    return {
-      price: data.solana[vsCurrency],
-      change24h: data.solana[`${vsCurrency}_24h_change`],
-      currency: vsCurrency.toUpperCase()
-    }
+    return data
   } catch (error) {
     throw new Error(`Failed to fetch Solana price: ${error.message}`)
   }
