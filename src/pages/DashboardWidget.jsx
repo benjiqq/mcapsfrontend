@@ -1,61 +1,52 @@
 import { useState, useEffect } from 'react'
 import { fetchCoinGeckoPrice, fetchCoinStatsPrice } from '../api'
+import { datapoints } from './datapoints'
+import { useVisibility } from '../contexts/VisibilityContext'
 import './DashboardWidget.css'
 
 function DashboardWidget() {
-  // State for all cryptocurrencies with both API sources
-  const [prices, setPrices] = useState({
-    btc: { 
-      coingecko: { price: null, change24h: null },
-      coinstats: { price: null, change24h: null }
-    },
-    eth: { 
-      coingecko: { price: null, change24h: null },
-      coinstats: { price: null, change24h: null }
-    },
-    xrp: { 
-      coingecko: { price: null, change24h: null },
-      coinstats: { price: null, change24h: null }
-    },
-    sol: { 
-      coingecko: { price: null, change24h: null },
-      coinstats: { price: null, change24h: null }
-    }
-  })
+  // Get visibility context
+  const { visibleDatapoints } = useVisibility()
+  
+  // Initialize state dynamically from datapoints
+  const initialPrices = datapoints.reduce((acc, dp) => {
+    acc[dp.id] = { price: null, change24h: null }
+    return acc
+  }, {})
+  
+  const [prices, setPrices] = useState(initialPrices)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [lastUpdate, setLastUpdate] = useState(null)
 
-  // Fetch all cryptocurrency prices from both APIs
+  // Fetch all prices from their respective sources
   const fetchPrices = async () => {
     try {
       setError('')
       setLoading(true)
       
-      // Coin IDs mapping for both APIs
-      const coinIds = {
-        btc: 'bitcoin',
-        eth: 'ethereum',
-        xrp: 'xrp',
-        sol: 'solana'
-      }
-      
-      // Fetch all prices in parallel from both APIs
-      const pricePromises = Object.entries(coinIds).flatMap(([key, coinId]) => [
-        fetchCoinGeckoPrice(coinId, 'usd').then(data => ({ key, source: 'coingecko', data })).catch(err => ({ key, source: 'coingecko', error: err.message })),
-        fetchCoinStatsPrice(coinId).then(data => ({ key, source: 'coinstats', data })).catch(err => ({ key, source: 'coinstats', error: err.message }))
-      ])
+      // Fetch prices from each datapoint's source
+      const pricePromises = datapoints.map((dp) => {
+        // Call the appropriate API based on the source
+        const fetchPromise = dp.sourceKey === 'coingecko'
+          ? fetchCoinGeckoPrice(dp.coinId, 'usd')
+          : fetchCoinStatsPrice(dp.coinId)
+        
+        return fetchPromise
+          .then(data => ({ id: dp.id, data }))
+          .catch(err => ({ id: dp.id, error: err.message }))
+      })
       
       const results = await Promise.all(pricePromises)
       
       // Process results and update state
       const newPrices = { ...prices }
-      results.forEach(({ key, source, data, error: err }) => {
+      results.forEach(({ id, data, error: err }) => {
         if (data) {
-          newPrices[key][source] = { price: data.price, change24h: data.change24h }
+          newPrices[id] = { price: data.price, change24h: data.change24h }
         } else if (err) {
           // On error, keep existing data or set to null
-          newPrices[key][source] = { price: null, change24h: null }
+          newPrices[id] = { price: null, change24h: null }
         }
       })
       
@@ -102,77 +93,62 @@ function DashboardWidget() {
     return `${sign}${value.toFixed(2)}%`
   }
 
-  // Cryptocurrency data for display
-  const cryptos = [
-    { id: 'btc', name: 'Bitcoin', symbol: 'BTC', data: prices.btc },
-    { id: 'eth', name: 'Ethereum', symbol: 'ETH', data: prices.eth },
-    { id: 'xrp', name: 'XRP', symbol: 'XRP', data: prices.xrp },
-    { id: 'sol', name: 'Solana', symbol: 'SOL', data: prices.sol }
-  ]
+  // Map datapoints to display data, filtering by visibility
+  const widgets = datapoints
+    .filter(dp => visibleDatapoints[dp.id])
+    .map(dp => ({
+      id: dp.id,
+      name: dp.name,
+      symbol: dp.symbol,
+      source: dp.source,
+      price: prices[dp.id]
+    }))
 
   return (
     <div className="dashboard-widgets-container">
-      <div className="dashboard-widget">
-        <header className="widget-header">
-          <h1>Crypto Prices</h1>
-          {lastUpdate && (
-            <span className="last-update">
-              Updated: {lastUpdate.toLocaleTimeString()}
-            </span>
-          )}
-        </header>
+      {widgets.map((widget) => (
+        <div key={widget.id} className="dashboard-widget">
+          <header className="widget-header">
+            <h1>{widget.name}</h1>
+            {lastUpdate && (
+              <span className="last-update">
+                Updated: {lastUpdate.toLocaleTimeString()}
+              </span>
+            )}
+          </header>
 
-        <div className="widget-content">
-          {loading && (
-            <div className="loading">
-              <div className="spinner"></div>
-              <span>Loading...</span>
-            </div>
-          )}
-          {error && <div className="error">Error: {error}</div>}
+          <div className="widget-content">
+            {loading && (
+              <div className="loading">
+                <div className="spinner"></div>
+                <span>Loading...</span>
+              </div>
+            )}
+            {error && <div className="error">Error: {error}</div>}
+            
+            {!loading && !error && (
+              <div className="crypto-card">
+                <div className="crypto-symbol">{widget.symbol}</div>
+                
+                {widget.price.price !== null ? (
+                  <>
+                    <div className="price-value">{formatPrice(widget.price.price)}</div>
+                    <div className={`price-change ${widget.price.change24h >= 0 ? 'positive' : 'negative'}`}>
+                      {formatChange(widget.price.change24h)} (24h)
+                    </div>
+                  </>
+                ) : (
+                  <div className="price-value">N/A</div>
+                )}
+              </div>
+            )}
+          </div>
           
-          {!loading && !error && (
-            <div className="crypto-grid">
-              {cryptos.map((crypto) => (
-                <div key={crypto.id} className="crypto-card">
-                  <div className="crypto-name">{crypto.name}</div>
-                  <div className="crypto-symbol">{crypto.symbol}</div>
-                  
-                  {/* CoinGecko price */}
-                  <div className="price-source">
-                    <div className="price-source-label">CoinGecko</div>
-                    {crypto.data.coingecko.price !== null ? (
-                      <>
-                        <div className="price-value">{formatPrice(crypto.data.coingecko.price)}</div>
-                        <div className={`price-change ${crypto.data.coingecko.change24h >= 0 ? 'positive' : 'negative'}`}>
-                          {formatChange(crypto.data.coingecko.change24h)} (24h)
-                        </div>
-                      </>
-                    ) : (
-                      <div className="price-value">N/A</div>
-                    )}
-                  </div>
-                  
-                  {/* CoinStats price */}
-                  <div className="price-source">
-                    <div className="price-source-label">CoinStats</div>
-                    {crypto.data.coinstats.price !== null ? (
-                      <>
-                        <div className="price-value">{formatPrice(crypto.data.coinstats.price)}</div>
-                        <div className={`price-change ${crypto.data.coinstats.change24h >= 0 ? 'positive' : 'negative'}`}>
-                          {formatChange(crypto.data.coinstats.change24h)} (24h)
-                        </div>
-                      </>
-                    ) : (
-                      <div className="price-value">N/A</div>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
+          <footer className="widget-footer">
+            <div className="widget-source-label">Source: {widget.source}</div>
+          </footer>
         </div>
-      </div>
+      ))}
     </div>
   )
 }
