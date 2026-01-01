@@ -9,14 +9,16 @@ export default defineConfig({
     strictPort: true,
     proxy: {
       // Proxy API calls to backend server
-      '/snapshots': 'http://localhost:8080',
-      '/coins': 'http://localhost:8080',
-      '/assets': 'http://localhost:8080',
-      '/chat': 'http://localhost:8080',
-      '/analyze': 'http://localhost:8080',
-      '/health': 'http://localhost:8080',
-      '/x': 'http://localhost:8080',
-      '/watchlist': 'http://localhost:8080'
+      '/snapshots': 'https://api.mcaps.com',
+      '/coins': 'https://api.mcaps.com',
+      '/assets': 'https://api.mcaps.com',
+      '/chat': 'https://api.mcaps.com',
+      '/analyze': 'https://api.mcaps.com',
+      '/health': 'https://api.mcaps.com',
+      '/x': 'https://api.mcaps.com',
+      '/watchlist': 'https://api.mcaps.com',
+      '/coingecko': 'https://api.mcaps.com',
+      '/coinstats': 'https://api.mcaps.com'
     },
     // Configure proxy to handle /assets/count properly
     define: {

@@ -1,21 +1,7 @@
 // API functions for fetching cryptocurrency data
 
-// Base URL - use localhost in development, production URL otherwise
-// Detect local development by checking hostname and port
-const isLocalDevelopment = 
-  window.location.hostname === 'localhost' || 
-  window.location.hostname === '127.0.0.1' ||
-  window.location.port === '5173' || // Vite dev server default port
-  window.location.port === '3000';    // Common React dev server port
-
-const API_BASE = isLocalDevelopment
-  ? 'http://localhost:8080'
-  : 'https://api.mcaps.com';
-
-// Log API base URL in development for debugging
-if (isLocalDevelopment) {
-  console.log('Using local API:', API_BASE);
-}
+// Base URL - always use production API
+const API_BASE = 'https://api.mcaps.com';
 
 // Fetch the total count of assets
 export async function fetchAssetsCount() {
@@ -90,20 +76,33 @@ export async function sendChatMessage(message, vsCurrency = 'usd') {
   return data.reply || 'No reply'
 }
 
-// Fetch coin price from mcaps API
+// Fetch coin price from CoinGecko API
 // Returns: { price, change24h, currency }
-export async function fetchCoinPrice(coinId, vsCurrency = 'usd') {
-  // Build URL - only add vs_currency query param if not default USD
-  const url = vsCurrency.toLowerCase() === 'usd'
-    ? `${API_BASE}/price/${encodeURIComponent(coinId)}`
-    : `${API_BASE}/price/${encodeURIComponent(coinId)}?vs_currency=${encodeURIComponent(vsCurrency)}`
+export async function fetchCoinGeckoPrice(coinId, vsCurrency = 'usd') {
+  const url = `${API_BASE}/coingecko/price/${encodeURIComponent(coinId)}?vs_currency=${encodeURIComponent(vsCurrency)}`
   
   const response = await fetch(url)
   if (!response.ok) {
     if (response.status === 404) {
       throw new Error(`Price data not found for coin: ${coinId}`)
     }
-    throw new Error(`Failed to fetch price for ${coinId}: HTTP ${response.status}`)
+    throw new Error(`Failed to fetch CoinGecko price for ${coinId}: HTTP ${response.status}`)
+  }
+  const data = await response.json()
+  return data
+}
+
+// Fetch coin price from CoinStats API
+// Returns: { price, change24h, currency }
+export async function fetchCoinStatsPrice(coinId) {
+  const url = `${API_BASE}/coinstats/price/${encodeURIComponent(coinId)}`
+  
+  const response = await fetch(url)
+  if (!response.ok) {
+    if (response.status === 404) {
+      throw new Error(`Price data not found for coin: ${coinId}`)
+    }
+    throw new Error(`Failed to fetch CoinStats price for ${coinId}: HTTP ${response.status}`)
   }
   const data = await response.json()
   return data

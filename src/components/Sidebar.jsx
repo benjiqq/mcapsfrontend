@@ -100,6 +100,10 @@ function Sidebar() {
           <span className="nav-icon">📊</span>
           <span className="nav-label">Dashboard</span>
         </Link>
+        <Link to="/settings" className={`nav-item ${location.pathname === '/settings' ? 'active' : ''}`}>
+          <span className="nav-icon">⚙️</span>
+          <span className="nav-label">Settings</span>
+        </Link>
       </nav>
 
       {/* X login section commented out */}
