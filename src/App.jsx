@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { VisibilityProvider } from './contexts/VisibilityContext'
 import { useAuth } from './contexts/AuthContext'
 import './App.css'
@@ -37,7 +37,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/twitter-login" element={<TwitterAuth />} />
           <Route path="/auth/callback" element={<AuthCallback />} />
-          <Route path="*" element={<div />} /> {/* Blank page for all other routes */}
+          <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </Router>
     )
