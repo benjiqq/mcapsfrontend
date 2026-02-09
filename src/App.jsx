@@ -8,6 +8,7 @@ import Settings from './pages/Settings'
 import Login from './pages/Login'
 import ProtectedRoute from './components/ProtectedRoute'
 import TwitterAuth from './pages/TwitterAuth'
+import TwitterInfo from './pages/TwitterInfo'
 import AuthCallback from './pages/AuthCallback'
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
               <Route path="/dashboardwidget" element={<ProtectedRoute element={<DashboardWidget />} />} />
               <Route path="/settings" element={<ProtectedRoute element={<Settings />} />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/twitter-info" element={<ProtectedRoute element={<TwitterInfo />} />} />
               <Route path="/twitter-login" element={<TwitterAuth />} />
               <Route path="/auth/callback" element={<AuthCallback />} />
             </Routes>

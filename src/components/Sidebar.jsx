@@ -30,10 +30,17 @@ function Sidebar() {
           <span className="nav-icon">⚙️</span>
           <span className="nav-label">Settings</span>
         </Link>
-        <Link to="/twitter-login" className={`nav-item ${location.pathname === '/twitter-login' ? 'active' : ''}`}>
-          <span className="nav-icon">𝕏</span>
-          <span className="nav-label">Connect X</span>
-        </Link>
+        {user && user.isXUser ? (
+          <Link to="/twitter-info" className={`nav-item ${location.pathname === '/twitter-info' ? 'active' : ''}`}>
+            <span className="nav-icon">𝕏</span>
+            <span className="nav-label">X Info</span>
+          </Link>
+        ) : (
+          <Link to="/twitter-login" className={`nav-item ${location.pathname === '/twitter-login' ? 'active' : ''}`}>
+            <span className="nav-icon">𝕏</span>
+            <span className="nav-label">Connect X</span>
+          </Link>
+        )}
       </nav>
 
       {/* User Account Section */}
