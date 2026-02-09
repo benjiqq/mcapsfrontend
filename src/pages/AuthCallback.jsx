@@ -5,6 +5,8 @@ function AuthCallback() {
   const [status, setStatus] = useState('Processing...')
   const navigate = useNavigate()
 
+  const { handleXLoginSuccess } = useAuth()
+
   useEffect(() => {
     // Get URL parameters from backend redirect
     const urlParams = new URLSearchParams(window.location.search)
@@ -22,7 +24,7 @@ function AuthCallback() {
         'token_exchange_failed': 'Token exchange with Twitter failed',
         'callback_error': 'OAuth callback error occurred'
       }
-      
+
       setStatus(`Authentication failed: ${errorMessages[error] || error}`)
       setTimeout(() => navigate('/'), 3000)
       return
@@ -31,27 +33,23 @@ function AuthCallback() {
     // Check for success
     if (success === 'true' && username) {
       console.log('Logged in as:', username, 'User ID:', userId)
-      
-      // Store user info in localStorage (in production, use secure session)
-      localStorage.setItem('x_username', username)
-      localStorage.setItem('x_user_id', userId)
-      
-      // Dispatch custom event to notify other components of login
-      window.dispatchEvent(new Event('x-user-login'))
-      
+
+      // Update auth context
+      handleXLoginSuccess(username, userId)
+
       setStatus(`Login successful! Welcome, @${username}`)
-      
+
       // Get return URL or default to home
       const returnUrl = localStorage.getItem('x_oauth_return_url') || '/'
       localStorage.removeItem('x_oauth_return_url')
-      
+
       // Redirect back to where user came from
       setTimeout(() => navigate(returnUrl), 2000)
     } else {
       setStatus('Authentication failed: Invalid response from server')
       setTimeout(() => navigate('/'), 3000)
     }
-  }, [navigate])
+  }, [navigate, handleXLoginSuccess])
 
   return (
     <div style={{
