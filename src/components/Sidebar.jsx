@@ -33,14 +33,14 @@ function Sidebar() {
             <span className="nav-label">Connect X</span>
           </Link>
         )}
-        <Link to="/dashboardwidget" className={`nav-item ${location.pathname === '/dashboardwidget' ? 'active' : ''}`}>
+        {/* <Link to="/dashboardwidget" className={`nav-item ${location.pathname === '/dashboardwidget' ? 'active' : ''}`}>
           <span className="nav-icon">📊</span>
           <span className="nav-label">Dashboard</span>
         </Link>
         <Link to="/settings" className={`nav-item ${location.pathname === '/settings' ? 'active' : ''}`}>
           <span className="nav-icon">⚙️</span>
           <span className="nav-label">Settings</span>
-        </Link>
+        </Link> */}
         <div className="nav-item" onClick={handleLogout} style={{ cursor: 'pointer', marginTop: '20px' }}>
           <span className="nav-icon">🚪</span>
           <span className="nav-label">Logout</span>

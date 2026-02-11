@@ -18,14 +18,14 @@ export const datapoints = [
     sourceKey: 'coingecko',
     coinId: 'ethereum'
   },
-  {
-    id: 'xrp-coingecko',
-    name: 'XRP',
-    symbol: 'XRP',
-    source: 'CoinGecko',
-    sourceKey: 'coingecko',
-    coinId: 'xrp'
-  },
+  //   {
+  //     id: 'xrp-coingecko',
+  //     name: 'XRP',
+  //     symbol: 'XRP',
+  //     source: 'CoinGecko',
+  //     sourceKey: 'coingecko',
+  //     coinId: 'xrp'
+  //   },
   {
     id: 'sol-coingecko',
     name: 'Solana',
@@ -51,14 +51,14 @@ export const datapoints = [
     sourceKey: 'coinstats',
     coinId: 'ethereum'
   },
-  {
-    id: 'xrp-coinstats',
-    name: 'XRP',
-    symbol: 'XRP',
-    source: 'CoinStats',
-    sourceKey: 'coinstats',
-    coinId: 'xrp'
-  },
+  //   {
+  //     id: 'xrp-coinstats',
+  //     name: 'XRP',
+  //     symbol: 'XRP',
+  //     source: 'CoinStats',
+  //     sourceKey: 'coinstats',
+  //     coinId: 'xrp'
+  //   },
   {
     id: 'sol-coinstats',
     name: 'Solana',
