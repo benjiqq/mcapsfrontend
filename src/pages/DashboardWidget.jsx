@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { fetchCoinGeckoPrice, fetchCoinStatsPrice } from '../api'
+// import { fetchCoinGeckoPrice, fetchCoinStatsPrice } from '../api'
 import { datapoints } from './datapoints'
 import { useVisibility } from '../contexts/VisibilityContext'
 import './DashboardWidget.css'
@@ -7,20 +7,22 @@ import './DashboardWidget.css'
 function DashboardWidget() {
   // Get visibility context
   const { visibleDatapoints } = useVisibility()
-  
+
   // Initialize state dynamically from datapoints
   const initialPrices = datapoints.reduce((acc, dp) => {
     acc[dp.id] = { price: null, change24h: null }
     return acc
   }, {})
-  
+
   const [prices, setPrices] = useState(initialPrices)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [lastUpdate, setLastUpdate] = useState(null)
 
   // Fetch all prices from their respective sources
   const fetchPrices = async () => {
+    // Disabled price fetching
+    /*
     try {
       setError('')
       setLoading(true)
@@ -57,6 +59,8 @@ function DashboardWidget() {
       setError(e.message || String(e))
       setLoading(false)
     }
+    */
+    setLoading(false)
   }
 
   // Fetch prices on mount and set up interval to fetch every 1 minute
@@ -109,7 +113,7 @@ function DashboardWidget() {
       {widgets.map((widget) => (
         <div key={widget.id} className="dashboard-widget">
           <header className="widget-header">
-            <h1>{widget.name}</h1>
+            <h3>{widget.name}</h3>
             {lastUpdate && (
               <span className="last-update">
                 Updated: {lastUpdate.toLocaleTimeString()}
@@ -125,11 +129,11 @@ function DashboardWidget() {
               </div>
             )}
             {error && <div className="error">Error: {error}</div>}
-            
+
             {!loading && !error && (
               <div className="crypto-card">
                 <div className="crypto-symbol">{widget.symbol}</div>
-                
+
                 {widget.price.price !== null ? (
                   <>
                     <div className="price-value">{formatPrice(widget.price.price)}</div>
@@ -143,7 +147,7 @@ function DashboardWidget() {
               </div>
             )}
           </div>
-          
+
           <footer className="widget-footer">
             <div className="widget-source-label">Source: {widget.source}</div>
           </footer>

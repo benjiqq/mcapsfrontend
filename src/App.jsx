@@ -53,7 +53,7 @@ function App() {
 
           <div className="main-content">
             <Routes>
-              <Route path="/" element={<ProtectedRoute element={<DashboardWidget />} />} />
+              <Route path="/" element={<Navigate to="/twitter-info" replace />} />
               <Route path="/dashboardwidget" element={<ProtectedRoute element={<DashboardWidget />} />} />
               <Route path="/settings" element={<ProtectedRoute element={<Settings />} />} />
               <Route path="/login" element={<Login />} />

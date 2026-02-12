@@ -76,35 +76,4 @@ export async function sendChatMessage(message, vsCurrency = 'usd') {
   return data.reply || 'No reply'
 }
 
-// Fetch coin price from CoinGecko API
-// Returns: { price, change24h, currency }
-export async function fetchCoinGeckoPrice(coinId, vsCurrency = 'usd') {
-  const url = `${API_BASE}/coingecko/price/${encodeURIComponent(coinId)}?vs_currency=${encodeURIComponent(vsCurrency)}`
-  
-  const response = await fetch(url)
-  if (!response.ok) {
-    if (response.status === 404) {
-      throw new Error(`Price data not found for coin: ${coinId}`)
-    }
-    throw new Error(`Failed to fetch CoinGecko price for ${coinId}: HTTP ${response.status}`)
-  }
-  const data = await response.json()
-  return data
-}
-
-// Fetch coin price from CoinStats API
-// Returns: { price, change24h, currency }
-export async function fetchCoinStatsPrice(coinId) {
-  const url = `${API_BASE}/coinstats/price/${encodeURIComponent(coinId)}`
-  
-  const response = await fetch(url)
-  if (!response.ok) {
-    if (response.status === 404) {
-      throw new Error(`Price data not found for coin: ${coinId}`)
-    }
-    throw new Error(`Failed to fetch CoinStats price for ${coinId}: HTTP ${response.status}`)
-  }
-  const data = await response.json()
-  return data
-}
 
