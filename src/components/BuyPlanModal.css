@@ -1,0 +1,196 @@
+/* BuyPlanModal.css */
+/* Scoped to avoid conflicts with global styles */
+
+.buy-plan-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.buy-plan-modal {
+    width: 720px;
+    background: linear-gradient(180deg, #151821, #0f1218);
+    border-radius: 28px;
+    padding: 36px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    position: relative;
+    color: #e8e8e8;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.buy-plan-modal .close {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    border: 1px solid #2a2f39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #9aa0a6;
+    cursor: pointer;
+    background: transparent;
+}
+
+.buy-plan-modal .close:hover {
+    background: #2a2f39;
+    color: #fff;
+}
+
+.buy-plan-modal h1 {
+    margin: 0 0 8px 0;
+    font-size: 38px;
+    font-weight: 700;
+    color: #e8e8e8;
+}
+
+.buy-plan-modal .sub {
+    color: #9aa0a6;
+    margin-bottom: 26px;
+    font-size: 20px;
+}
+
+.buy-plan-modal .card {
+    background: linear-gradient(180deg, #1d212a, #1a1e26);
+    border-radius: 26px;
+    padding: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    position: relative;
+    border: none;
+    /* Reset if needed */
+}
+
+.buy-plan-modal .discount {
+    position: absolute;
+    right: 18px;
+    top: -12px;
+    background: #19c37d;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 0;
+    display: block;
+}
+
+.buy-plan-modal .plan-title {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #e8e8e8;
+}
+
+.buy-plan-modal .meta {
+    color: #9aa0a6;
+    font-size: 18px;
+}
+
+.buy-plan-modal .price {
+    text-align: right;
+}
+
+.buy-plan-modal .old {
+    color: #8b8f96;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.buy-plan-modal .new {
+    font-size: 36px;
+    font-weight: 700;
+    color: #e8e8e8;
+}
+
+.buy-plan-modal .ubi {
+    color: #ff4d00;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.buy-plan-modal .section-title {
+    color: #8b8f96;
+    margin: 18px 0 14px 0;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.buy-plan-modal .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px;
+    margin-bottom: 28px;
+}
+
+.buy-plan-modal .item {
+    font-size: 22px;
+    color: #cfd3d7;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.buy-plan-modal .ok {
+    color: #cfd3d7;
+}
+
+.buy-plan-modal .ok::before {
+    content: '✓';
+    color: #ff7a3d;
+    font-weight: bold;
+}
+
+.buy-plan-modal .no {
+    color: #666;
+}
+
+.buy-plan-modal .no::before {
+    content: '✕';
+    color: #666;
+    font-weight: bold;
+}
+
+.buy-plan-modal .warn {
+    border: 1px solid #5a2a1c;
+    color: #ff4d00;
+    padding: 18px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 18px;
+    background: rgba(255, 77, 0, 0.08);
+    font-size: 20px;
+}
+
+.buy-plan-modal .btn {
+    width: 100%;
+    padding: 22px;
+    background: #ff4d00;
+    border: none;
+    border-radius: 22px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.buy-plan-modal .btn:hover {
+    opacity: 0.9;
+}

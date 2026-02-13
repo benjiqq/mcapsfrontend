@@ -4,6 +4,9 @@ import './App.css'
 import Sidebar from './components/Sidebar'
 import Home from './pages/Home'
 
+import Help from './pages/Help'
+import About from './pages/About'
+
 // Inner component to use AuthContext
 function AppContent() {
   const { isAuthenticated, loading } = useAuth()
@@ -38,6 +41,8 @@ function AppContent() {
       <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

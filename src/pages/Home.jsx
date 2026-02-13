@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
+import BuyPlanModal from '../components/BuyPlanModal';
 
 function Home() {
     const { user, logout } = useAuth();
     const navigate = useNavigate();
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleAuthAction = () => {
         if (user) {
@@ -44,7 +46,7 @@ function Home() {
                         Browse by country and pay with card, crypto, or credits.
                     </div>
 
-                    <div className="plan">
+                    <div className="plan" onClick={() => setIsModalOpen(true)}>
                         <div>
                             <h3>1GB, 7 days</h3>
                             <div className="meta">HK • 5G — Messaging · Email · Maps · Browsing</div>
@@ -56,7 +58,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className="plan">
+                    <div className="plan" onClick={() => setIsModalOpen(true)}>
                         <div>
                             <h3>2GB, 15 days</h3>
                             <div className="meta">HK • 5G — Messaging · Email · Maps · Browsing</div>
@@ -68,7 +70,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className="plan">
+                    <div className="plan" onClick={() => setIsModalOpen(true)}>
                         <div>
                             <h3>3GB, 30 days</h3>
                             <div className="meta">HK • 5G — Messaging · Email · Maps · Browsing</div>
@@ -81,6 +83,7 @@ function Home() {
                     </div>
                 </main>
             </div>
+            <BuyPlanModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </React.Fragment>
     );
 }
