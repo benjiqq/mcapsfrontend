@@ -1,48 +1,27 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider, useAuth } from './contexts/AuthContext'
 import './App.css'
-import Sidebar from './components/Sidebar'
 import Home from './pages/Home'
-
-import Help from './pages/Help'
-import About from './pages/About'
 
 // Inner component to use AuthContext
 function AppContent() {
-  const { isAuthenticated, loading } = useAuth()
+  const { loading } = useAuth()
 
   if (loading) {
     return (
-      <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        minHeight: '100vh',
-        fontSize: '18px',
-        color: '#666'
-      }}>
-        Loading...
+      <div className="d-flex justify-content-center align-items-center vh-100 bg-dark text-muted">
+        <div className="spinner-border text-primary" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
       </div>
-    )
-  }
-
-  if (!isAuthenticated) {
-    return (
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
     )
   }
 
   return (
     <div className="app-container">
-      <Sidebar />
       <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/help" element={<Help />} />
-          <Route path="/about" element={<About />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

@@ -1,19 +1,15 @@
 .app-container {
-  display: flex;
   min-height: 100vh;
 }
 
 .main-content {
   flex: 1;
-  margin-left: 240px;
-  padding: 24px;
+  padding: 0;
 }
 
 /* Responsive layout */
 @media (max-width: 768px) {
   .main-content {
-    margin-left: 60px;
-    padding: 16px;
+    padding: 0;
   }
 }
-
