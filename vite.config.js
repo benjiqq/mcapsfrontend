@@ -4,7 +4,20 @@ import { resolve } from 'path'
 
 // Vite configuration for React app
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    {
+      name: 'app-rewrite',
+      configureServer(server) {
+        server.middlewares.use((req, res, next) => {
+          if (req.url.startsWith('/app') && !req.url.includes('.')) {
+            req.url = '/app/index.html'
+          }
+          next()
+        })
+      }
+    }
+  ],
   server: {
     port: 5173,
     strictPort: true,
