@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 
 // Vite configuration for React app
 export default defineConfig({
@@ -24,6 +25,14 @@ export default defineConfig({
     define: {
       'process.env': {}
     }
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: ('index.html'),
+        app: ('app/index.html'),
+      },
+    },
   }
 })
 
