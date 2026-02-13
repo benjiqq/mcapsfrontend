@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>libertyroam — Plans</title>
+    <style>
+        :root {
+            --bg: #0f1116;
+            --panel: #1a1d24;
+            --panel2: #20242c;
+            --text: #e6e6e6;
+            --muted: #9aa0a6;
+            --orange: #ff5a00;
+            --green: #1ec98f;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: linear-gradient(180deg, #12141a, #0b0d12);
+            color: var(--text);
+        }
+
+        /* Top bar */
+        .top {
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 28px;
+            border-bottom: 1px solid #1f232b;
+        }
+
+        .brand {
+            font-size: 28px;
+            letter-spacing: .5px
+        }
+
+        .login {
+            background: var(--orange);
+            border: none;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        /* Layout */
+        .wrap {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 48px;
+            padding: 40px 48px;
+        }
+
+        /* Left card */
+        .leftcard {
+            background: var(--panel);
+            border-radius: 22px;
+            padding: 28px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+        }
+
+        .leftcard h3 {
+            margin: 0 0 12px 0
+        }
+
+        .leftcard p {
+            color: var(--muted);
+            line-height: 1.5
+        }
+
+        .leftcard ul {
+            padding-left: 18px;
+            color: #cfd3d7;
+        }
+
+        .leftcard li {
+            margin: 8px 0
+        }
+
+        .cta {
+            margin-top: 18px;
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 14px;
+            background: var(--orange);
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        /* Main */
+        .main h1 {
+            margin: 4px 0 8px 0;
+            font-size: 40px;
+            font-weight: 650;
+        }
+
+        .sub {
+            color: var(--muted);
+            margin-bottom: 28px
+        }
+
+        .plan {
+            background: linear-gradient(180deg, var(--panel), var(--panel2));
+            border-radius: 20px;
+            padding: 22px 26px;
+            margin-bottom: 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .45);
+        }
+
+        .plan h3 {
+            margin: 0 0 8px 0
+        }
+
+        .meta {
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .price {
+            text-align: right;
+        }
+
+        .price .old {
+            color: #8a8f96;
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+
+        .price .new {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .discount {
+            background: var(--green);
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="top">
+        <div class="brand">libertyroam</div>
+        <button class="login">Log in</button>
+    </header>
+
+    <div class="wrap">
+
+        <aside class="leftcard">
+            <h3>Need data?</h3>
+            <p>Stay connected anywhere in the world.</p>
+            <ul>
+                <li>Instant activation</li>
+                <li>Global coverage</li>
+                <li>Pay as you go</li>
+            </ul>
+            <button class="cta">Get Started</button>
+        </aside>
+
+        <main class="main">
+            <div class="sub">STORE</div>
+            <h1>Pick your plan</h1>
+            <div class="sub">
+                Browse by country and pay with card, crypto, or credits.
+            </div>
+
+            <div class="plan">
+                <div>
+                    <h3>1GB, 7 days</h3>
+                    <div class="meta">HK • 5G — Messaging · Email · Maps · Browsing</div>
+                </div>
+                <div class="price">
+                    <div class="discount">-20%</div>
+                    <div class="old">$3.08</div>
+                    <div class="new">$2.46</div>
+                </div>
+            </div>
+
+            <div class="plan">
+                <div>
+                    <h3>2GB, 15 days</h3>
+                    <div class="meta">HK • 5G — Messaging · Email · Maps · Browsing</div>
+                </div>
+                <div class="price">
+                    <div class="discount">-20%</div>
+                    <div class="old">$5.33</div>
+                    <div class="new">$4.26</div>
+                </div>
+            </div>
+
+            <div class="plan">
+                <div>
+                    <h3>3

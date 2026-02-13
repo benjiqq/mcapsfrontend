@@ -15,7 +15,7 @@ export function AuthProvider({ children }) {
     const login = async (role = 'user') => {
         // Simulate API call
         await new Promise(resolve => setTimeout(resolve, 500));
-        setUser({ id: '1', name: 'Demo User', email: 'magnusvig@toolbase.ai', role, isXUser: true });
+        setUser({ id: '1', name: 'Demo User', email: 'm@libertyroam.ai', role, isXUser: true });
     };
 
     const logout = () => {

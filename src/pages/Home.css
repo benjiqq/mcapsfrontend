@@ -1,98 +1,134 @@
-:root {
-  --bg1: #0b1f2e;
-  --bg2: #0a1622;
-  --panel: #0f2434;
-  --text: #cfd8df;
-  --muted: #8fa3b2;
-  --accent: #1fd1a5;
-}
-
-.home-container {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: linear-gradient(180deg, var(--bg1), var(--bg2));
-  color: var(--text);
-  min-height: 100vh;
-}
-
-/* Account Top bar */
-.account-topbar {
+/* Top bar */
+.top {
   height: 72px;
-  background: #233142;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 28px;
+  border-bottom: 1px solid #1f232b;
 }
 
 .brand {
-  font-size: 20px;
+  font-size: 28px;
   letter-spacing: .5px;
 }
 
-.account-nav {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  font-size: 15px;
-}
-
-.avatar {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: #1fd1a5;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #0b1f2e;
-  font-weight: 700;
+.login-btn {
+  background: var(--orange);
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /* Layout */
-.home-wrap {
-  display: flex;
-  padding: 48px 64px;
-  gap: 80px;
+.wrap {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  padding: 40px 48px;
 }
 
-/* Account Sidebar (inner) */
-.account-sidebar {
-  width: 220px;
-  padding-top: 40px;
+/* Left card */
+.leftcard {
+  background: var(--panel);
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
 }
 
-.account-sidebar a {
-  display: block;
-  padding: 12px 0;
-  color: var(--accent);
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.account-sidebar a:hover {
-  text-decoration: underline;
-}
-
-/* Content */
-.account-content {
-  flex: 1;
-  max-width: 800px;
-}
-
-.account-content h1 {
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin: 0 0 40px 0;
-  font-size: 44px;
+.leftcard h3 {
+  margin: 0 0 12px 0;
   color: var(--text);
 }
 
-.account-content p {
+.leftcard p {
   color: var(--muted);
-  line-height: 1.6;
-  font-size: 16px;
+  line-height: 1.5;
 }
 
-.accent {
-  color: var(--accent);
+.leftcard ul {
+  padding-left: 18px;
+  color: #cfd3d7;
+}
+
+.leftcard li {
+  margin: 8px 0;
+}
+
+.cta {
+  margin-top: 18px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: var(--orange);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Main */
+
+
+.main h1 {
+  margin: 4px 0 8px 0;
+  font-size: 40px;
+  font-weight: 650;
+  color: var(--text);
+}
+
+.sub {
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+.plan {
+  background: linear-gradient(180deg, var(--panel), var(--panel2));
+  border-radius: 20px;
+  padding: 22px 26px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .45);
+}
+
+.plan h3 {
+  margin: 0 0 8px 0;
+  color: var(--text);
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.price {
+  text-align: right;
+}
+
+.price .old {
+  color: #8a8f96;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.price .new {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.discount {
+  background: var(--green);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 6px;
+  color: #fff;
 }
