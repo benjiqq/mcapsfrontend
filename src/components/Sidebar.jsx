@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { useWatchlist } from '../contexts/WatchlistContext'
 import { useAuth } from '../contexts/AuthContext'
 import './Sidebar.css'
 
 function Sidebar() {
   const location = useLocation()
   const navigate = useNavigate()
-  const { watchlist } = useWatchlist()
   const { user, logout } = useAuth()
 
   const handleLogout = () => {
@@ -22,6 +20,10 @@ function Sidebar() {
       </div>
 
       <nav className="sidebar-nav">
+        <Link to="/" className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
+          <span className="nav-icon">🏠</span>
+          <span className="nav-label">Home</span>
+        </Link>
         {user && user.isXUser ? (
           <Link to="/twitter-info" className={`nav-item ${location.pathname === '/twitter-info' ? 'active' : ''}`}>
             <span className="nav-icon">𝕏</span>

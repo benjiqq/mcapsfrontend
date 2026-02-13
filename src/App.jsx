@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { AuthProvider, useAuth } from './contexts/AuthContext'
 import './App.css'
 import Sidebar from './components/Sidebar'
+import Home from './pages/Home'
 
-function App() {
+// Inner component to use AuthContext
+function AppContent() {
   const { isAuthenticated, loading } = useAuth()
 
-  // Show loading state while checking authentication
   if (loading) {
     return (
       <div style={{
@@ -21,34 +23,36 @@ function App() {
     )
   }
 
-  // If not authenticated, app is blank (only show login when navigating to /login)
   if (!isAuthenticated) {
     return (
-      <Router>
-        <Routes>
-          <Route path="*" element={<Navigate to="/login" replace />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     )
   }
 
-  // If authenticated, show the full app
   return (
-
-    <Router>
-      <div className="app-container">
-        <Sidebar />
-
-        <div className="main-content">
-          <Routes>
-            <Route path="/" element={<Navigate to="/" replace />} />
-          </Routes>
-        </div>
+    <div className="app-container">
+      <Sidebar />
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </div>
-    </Router>
+    </div>
+  )
+}
 
+function App() {
+  return (
+    <Router>
+      <AuthProvider>
+        <AppContent />
+      </AuthProvider>
+    </Router>
   )
 }
 
 export default App
-

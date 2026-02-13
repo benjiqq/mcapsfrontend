@@ -1,0 +1,98 @@
+:root {
+  --bg1: #0b1f2e;
+  --bg2: #0a1622;
+  --panel: #0f2434;
+  --text: #cfd8df;
+  --muted: #8fa3b2;
+  --accent: #1fd1a5;
+}
+
+.home-container {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg1), var(--bg2));
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Account Top bar */
+.account-topbar {
+  height: 72px;
+  background: #233142;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+}
+
+.brand {
+  font-size: 20px;
+  letter-spacing: .5px;
+}
+
+.account-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #1fd1a5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b1f2e;
+  font-weight: 700;
+}
+
+/* Layout */
+.home-wrap {
+  display: flex;
+  padding: 48px 64px;
+  gap: 80px;
+}
+
+/* Account Sidebar (inner) */
+.account-sidebar {
+  width: 220px;
+  padding-top: 40px;
+}
+
+.account-sidebar a {
+  display: block;
+  padding: 12px 0;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.account-sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Content */
+.account-content {
+  flex: 1;
+  max-width: 800px;
+}
+
+.account-content h1 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 0 40px 0;
+  font-size: 44px;
+  color: var(--text);
+}
+
+.account-content p {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.accent {
+  color: var(--accent);
+}
