@@ -75,7 +75,7 @@ function Home() {
                 <div className="col-lg-10">
                     <div className="badge bg-primary mb-3 py-2 px-3 rounded-pill" style={{ letterSpacing: '2px', fontWeight: '800' }}>STORE</div>
                     <h1 className="massive-title mb-4">Pick your plan</h1>
-                    <p className="lead text-muted mb-5" style={{ fontSize: '1.4rem', fontWeight: '500' }}>
+                    <p className="lead text-white mb-5" style={{ fontSize: '1.4rem', fontWeight: '500', opacity: 0.9 }}>
                         Browse by country and pay with card, crypto, or credits.
                     </p>
                 </div>
