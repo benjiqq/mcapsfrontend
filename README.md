@@ -2,13 +2,6 @@
 
 A React app that displays cryptocurrency prices and allows chat-based queries.
 
-## Features
-
-- Display top 100 crypto prices in a table
-- Real-time price updates with refresh button
-- Adjustable limit for number of coins displayed
-- Chat interface to ask questions about the data
-- Clean, responsive UI
 
 ## Setup
 
