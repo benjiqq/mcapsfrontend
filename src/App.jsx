@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthProvider, useAuth } from './contexts/AuthContext'
 import './App.css'
 import Home from './pages/Home'
+import About from './pages/About'
+import Navbar from './components/Navbar'
 
 // Inner component to use AuthContext
 function AppContent() {
@@ -19,9 +21,11 @@ function AppContent() {
 
   return (
     <div className="app-container">
+      <Navbar />
       <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

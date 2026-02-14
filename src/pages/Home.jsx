@@ -88,72 +88,70 @@ function Home() {
                     </div>
                 </div>
             ) : (
-                packages.map((pkg, index) => (
-                    <div
-                        className="plan"
-                        key={pkg.id || index}
-                        onClick={() => handleOpenModal(pkg)}
-                        style={{
-                            borderLeft: pkg.gradient_start ? `6px solid ${pkg.gradient_start}` : 'none',
-                            position: 'relative',
-                            overflow: 'hidden'
-                        }}
-                    >
-                        {pkg.gradient_start && (
-                            <div style={{
-                                position: 'absolute',
-                                top: 0,
-                                right: 0,
-                                width: '120px',
-                                height: '120px',
-                                background: `radial-gradient(circle at top right, ${pkg.gradient_start}33, transparent)`,
-                                pointerEvents: 'none'
-                            }} />
-                        )}
-                        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', width: '100%' }}>
-                            {pkg.operator_image && (
-                                <img
-                                    src={pkg.operator_image.url}
-                                    alt={pkg.operator_title}
-                                    style={{ width: '64px', height: '64px', borderRadius: '12px', objectFit: 'cover', border: '1px solid #333' }}
-                                />
-                            )}
-                            <div style={{ flex: 1 }}>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                                    <div>
-                                        <h3 style={{ fontSize: '1.5rem', marginBottom: '6px' }}>{pkg.title}</h3>
-                                        <div className="meta" style={{ fontSize: '1rem', fontWeight: '500' }}>
-                                            {pkg.country_title} ({pkg.country_code}) • {pkg.type.toUpperCase()} • {pkg.data} Data
+                <div className="row g-4">
+                    {packages.map((pkg, index) => (
+                        <div className="col-md-6" key={pkg.id || index}>
+                            <div
+                                className="plan-card"
+                                onClick={() => handleOpenModal(pkg)}
+                                style={{
+                                    borderLeft: pkg.gradient_start ? `6px solid ${pkg.gradient_start}` : 'none'
+                                }}
+                            >
+                                {pkg.gradient_start && (
+                                    <div className="glass-glow" style={{ background: `radial-gradient(circle at top right, ${pkg.gradient_start}22, transparent)` }} />
+                                )}
+                                <div className="d-flex gap-4 align-items-start position-relative">
+                                    {pkg.operator_image && (
+                                        <img
+                                            src={pkg.operator_image.url}
+                                            alt={pkg.operator_title}
+                                            className="operator-logo"
+                                        />
+                                    )}
+                                    <div className="flex-grow-1">
+                                        <div className="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <h3 className="h4 mb-1" style={{ fontWeight: '700' }}>{pkg.title}</h3>
+                                                <div className="meta-text text-uppercase tracking-wider">
+                                                    {pkg.country_title} ({pkg.country_code}) • {pkg.type} • {pkg.data}
+                                                </div>
+                                            </div>
+                                            <div className="price-tag">
+                                                <span className="currency">$</span>
+                                                <span className="amount">{pkg.price}</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="price">
-                                        <div className="new" style={{ fontSize: '2rem' }}>${pkg.price}</div>
+
+                                        {pkg.networks && (
+                                            <div className="network-labels mb-3">
+                                                {pkg.networks.split(', ').map((net, i) => (
+                                                    <span key={i} className="network-badge">{net}</span>
+                                                ))}
+                                            </div>
+                                        )}
+
+                                        {pkg.info && pkg.info.length > 0 && (
+                                            <ul className="feature-list list-unstyled mb-3">
+                                                {pkg.info.map((item, i) => (
+                                                    <li key={i} className="mb-2">
+                                                        <span className="check">✓</span> {item}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+
+                                        {pkg.other_info && (
+                                            <div className="other-info mt-auto">
+                                                {pkg.other_info}
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
-
-                                {pkg.networks && (
-                                    <div style={{ fontSize: '0.9rem', marginTop: '12px', color: '#ff9500', fontWeight: 'bold' }}>
-                                        {pkg.networks}
-                                    </div>
-                                )}
-
-                                {pkg.info && pkg.info.length > 0 && (
-                                    <ul style={{ paddingLeft: '1.2rem', margin: '12px 0', fontSize: '0.9rem', color: '#aaa', lineHeight: '1.5' }}>
-                                        {pkg.info.map((item, i) => (
-                                            <li key={i}>{item}</li>
-                                        ))}
-                                    </ul>
-                                )}
-
-                                {pkg.other_info && (
-                                    <div style={{ fontSize: '0.85rem', fontStyle: 'italic', color: '#888', marginTop: '8px' }}>
-                                        {pkg.other_info}
-                                    </div>
-                                )}
                             </div>
                         </div>
-                    </div>
-                ))
+                    ))}
+                </div>
             )}
 
             {!loading && packages.length === 0 && (
@@ -163,23 +161,14 @@ function Home() {
     );
 
     return (
-        <React.Fragment>
-            <header className="top-nav px-4">
-                <div className="brand">libertyroam</div>
-                <button className="btn btn-outline-light btn-sm px-4 rounded-pill" style={{ fontWeight: '600' }} onClick={handleAuthAction}>
-                    {user ? 'Log out' : 'Log in'}
-                </button>
-            </header>
-
-            <div className="page-wrap">
-                {homeContent}
-            </div>
+        <div className="page-wrap">
+            {homeContent}
             <BuyPlanModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
                 selectedPackage={selectedPackage}
             />
-        </React.Fragment>
+        </div>
     );
 }
 
