@@ -10,8 +10,7 @@ const Navbar = () => {
         if (user) {
             logout();
         } else {
-            // Login navigation removed as requested
-            console.log('Login clicked - link behavior removed');
+            navigate('/login');
         }
     };
 
@@ -42,11 +41,16 @@ const Navbar = () => {
                         >
                             Affiliate
                         </NavLink>
-
                     </div>
-                    <button className="nav-auth-btn" onClick={handleAuthAction}>
-                        {user ? 'Log out' : 'Log in'}
-                    </button>
+
+                    <div className="nav-profile-section">
+                        {user && user.picture && (
+                            <img src={user.picture} alt={user.username} className="nav-avatar" />
+                        )}
+                        <button className="nav-auth-btn" onClick={handleAuthAction}>
+                            {user ? 'Log out' : 'Log in'}
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>

@@ -86,22 +86,33 @@
     width: 100%;
 }
 
+.nav-profile-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #38bdf8;
+    object-fit: cover;
+}
+
 .nav-auth-btn {
-    background: transparent;
-    border: 1px solid var(--text-muted);
-    color: var(--text);
-    padding: 8px 24px;
-    border-radius: 100px;
-    font-size: 0.9rem;
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s;
 }
 
 .nav-auth-btn:hover {
-    background: var(--text);
-    color: var(--bg);
-    border-color: var(--text);
+    background-color: #0ea5e9;
     transform: translateY(-1px);
 }
 
