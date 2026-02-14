@@ -36,6 +36,13 @@ const Navbar = () => {
                         >
                             About
                         </NavLink>
+                        <NavLink
+                            to="/affiliate"
+                            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+                        >
+                            Affiliate
+                        </NavLink>
+
                     </div>
                     <button className="nav-auth-btn" onClick={handleAuthAction}>
                         {user ? 'Log out' : 'Log in'}

@@ -7,7 +7,7 @@ function About() {
     return (
         <div className="wrap" style={{ marginTop: '4rem' }}>
             <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 2rem', color: '#e6e6e6' }}>
-                <h1>About LibertyRoam</h1>
+                <h1>About</h1>
                 <p>Global connectivity made simple.</p>
             </div>
         </div>
