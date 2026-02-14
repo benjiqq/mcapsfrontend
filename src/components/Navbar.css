@@ -116,6 +116,17 @@
     transform: translateY(-1px);
 }
 
+.nav-auth-btn.logout {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.nav-auth-btn.logout:hover {
+    background-color: #ef4444;
+    color: #ffffff;
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 0 24px;

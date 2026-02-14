@@ -6,6 +6,7 @@ import About from './pages/About'
 import Navbar from './components/Navbar'
 import Affiliate from './pages/Affiliate'
 import Login from './pages/Login'
+import Account from './pages/Account'
 import ProtectedRoute from './components/ProtectedRoute'
 
 function AppContent() {
@@ -30,6 +31,7 @@ function AppContent() {
           <Route path="/" element={<ProtectedRoute element={<Home />} />} />
           <Route path="/about" element={<ProtectedRoute element={<About />} />} />
           <Route path="/affiliate" element={<ProtectedRoute element={<Affiliate />} />} />
+          <Route path="/account" element={<ProtectedRoute element={<Account />} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

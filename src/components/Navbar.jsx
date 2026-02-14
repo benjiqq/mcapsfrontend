@@ -44,12 +44,26 @@ const Navbar = () => {
                     </div>
 
                     <div className="nav-profile-section">
-                        {user && user.picture && (
-                            <img src={user.picture} alt={user.username} className="nav-avatar" />
+                        {user ? (
+                            <>
+                                <NavLink
+                                    to="/account"
+                                    className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+                                >
+                                    Account
+                                </NavLink>
+                                {user.picture && (
+                                    <img src={user.picture} alt={user.username} className="nav-avatar" />
+                                )}
+                                <button className="nav-auth-btn logout" onClick={logout}>
+                                    Log out
+                                </button>
+                            </>
+                        ) : (
+                            <button className="nav-auth-btn" onClick={() => navigate('/login')}>
+                                Log in
+                            </button>
                         )}
-                        <button className="nav-auth-btn" onClick={handleAuthAction}>
-                            {user ? 'Log out' : 'Log in'}
-                        </button>
                     </div>
                 </div>
             </div>
