@@ -1,19 +1,28 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { GoogleOAuthProvider } from '@react-oauth/google'
+import { PrivyProvider } from '@privy-io/react-auth'
 import { AuthProvider } from './contexts/AuthContext'
 import App from './App.jsx'
 import './index.css'
 
-const GOOGLE_CLIENT_ID = '730685688668-hd4cgfo1cv9a7gii4ao5l2234abm3uvn.apps.googleusercontent.com'
+const PRIVY_APP_ID = 'cmlm4c5fl00ha0ci6q96a6l3a'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
+    <PrivyProvider
+      appId={PRIVY_APP_ID}
+      config={{
+        loginMethods: ['email', 'wallet', 'google', 'apple', 'farcaster'],
+        appearance: {
+          theme: 'dark',
+          accentColor: '#38bdf8',
+        },
+      }}
+    >
       <AuthProvider>
         <App />
       </AuthProvider>
-    </GoogleOAuthProvider>
+    </PrivyProvider>
   </React.StrictMode>,
 )
 

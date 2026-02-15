@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
+import { usePrivy } from '@privy-io/react-auth';
 
 const AuthContext = createContext();
 
@@ -11,70 +12,68 @@ const API_BASE_URL = window.location.hostname === 'localhost'
     : 'https://api.libertyroam.com';
 
 export function AuthProvider({ children }) {
+    const { ready, authenticated, user: privyUser, login, logout: privyLogout, getAccessToken } = usePrivy();
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const loginWithGoogle = async (idToken) => {
-        setLoading(true);
-        try {
-            const response = await fetch(`${API_BASE_URL}/auth/google`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ id_token: idToken }),
-            });
+    // Sync Privy user with context user
+    useEffect(() => {
+        if (ready) {
+            if (authenticated && privyUser) {
+                // Initialize user from Privy data
+                // We'll normalize these fields to match what the app expects
+                const userInfo = {
+                    id: privyUser.id,
+                    email: privyUser.email?.address || (privyUser.google?.email) || (privyUser.apple?.email) || '',
+                    username: privyUser.email?.address?.split('@')[0] || (privyUser.google?.name) || 'User',
+                    picture: privyUser.google?.picture || null,
+                    is_admin: false, // Will be updated if backend session exists
+                };
 
-            if (!response.ok) throw new Error('Login failed');
-
-            const data = await response.json();
-            const { session_token, expires_at, ...userInfo } = data;
-
-            const authData = {
-                user: userInfo,
-                token: session_token,
-                expires_at
-            };
-
-            localStorage.setItem('auth_data', JSON.stringify(authData));
-            setUser(userInfo);
-            return userInfo;
-        } catch (error) {
-            console.error('Google login error:', error);
-            throw error;
-        } finally {
+                // Check for existing backend session to get extra info like is_admin
+                const stored = localStorage.getItem('auth_data');
+                if (stored) {
+                    try {
+                        const { user: backendUser, expires_at } = JSON.parse(stored);
+                        if (Date.now() / 1000 < expires_at) {
+                            setUser({ ...userInfo, ...backendUser });
+                        } else {
+                            setUser(userInfo);
+                        }
+                    } catch (e) {
+                        setUser(userInfo);
+                    }
+                } else {
+                    setUser(userInfo);
+                }
+            } else {
+                setUser(null);
+                localStorage.removeItem('auth_data');
+            }
             setLoading(false);
+        }
+    }, [ready, authenticated, privyUser]);
+
+    const loginWithPrivy = async () => {
+        try {
+            await login();
+        } catch (error) {
+            console.error('Privy login error:', error);
+            throw error;
         }
     };
 
-    const logout = () => {
+    const logout = async () => {
+        await privyLogout();
         localStorage.removeItem('auth_data');
         setUser(null);
     };
 
-    useEffect(() => {
-        const checkAuth = async () => {
-            const stored = localStorage.getItem('auth_data');
-            if (stored) {
-                try {
-                    const { user, token, expires_at } = JSON.parse(stored);
-                    if (Date.now() / 1000 < expires_at) {
-                        setUser(user);
-                    } else {
-                        localStorage.removeItem('auth_data');
-                    }
-                } catch (e) {
-                    localStorage.removeItem('auth_data');
-                }
-            }
-            setLoading(false);
-        };
-        checkAuth();
-    }, []);
-
     const value = {
         user,
-        loading,
-        isAuthenticated: !!user,
-        loginWithGoogle,
+        loading: loading || !ready,
+        isAuthenticated: authenticated,
+        login: loginWithPrivy,
         logout
     };
 

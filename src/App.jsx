@@ -7,7 +7,9 @@ import Navbar from './components/Navbar'
 import Affiliate from './pages/Affiliate'
 import Login from './pages/Login'
 import Account from './pages/Account'
+import Admin from './pages/Admin'
 import ProtectedRoute from './components/ProtectedRoute'
+import AdminRoute from './components/AdminRoute'
 
 function AppContent() {
   const { loading } = useAuth()
@@ -32,6 +34,7 @@ function AppContent() {
           <Route path="/about" element={<ProtectedRoute element={<About />} />} />
           <Route path="/affiliate" element={<ProtectedRoute element={<Affiliate />} />} />
           <Route path="/account" element={<ProtectedRoute element={<Account />} />} />
+          <Route path="/admin" element={<AdminRoute element={<Admin />} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

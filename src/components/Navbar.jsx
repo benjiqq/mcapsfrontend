@@ -52,6 +52,14 @@ const Navbar = () => {
                                 >
                                     Account
                                 </NavLink>
+                                {user.is_admin && (
+                                    <NavLink
+                                        to="/admin"
+                                        className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+                                    >
+                                        Admin
+                                    </NavLink>
+                                )}
                                 {user.picture && (
                                     <img src={user.picture} alt={user.username} className="nav-avatar" />
                                 )}

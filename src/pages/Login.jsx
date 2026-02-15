@@ -1,24 +1,24 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { GoogleLogin } from '@react-oauth/google';
 
 function Login() {
     const [error, setError] = useState(null);
-    const { loginWithGoogle } = useAuth();
+    const { login, user } = useAuth();
     const navigate = useNavigate();
 
-    const handleSuccess = async (response) => {
-        try {
-            await loginWithGoogle(response.credential);
+    useEffect(() => {
+        if (user) {
             navigate('/');
+        }
+    }, [user, navigate]);
+
+    const handleLogin = async () => {
+        try {
+            await login();
         } catch (err) {
             setError('Login failed. Please try again.');
         }
-    };
-
-    const handleError = () => {
-        setError('Google login failed.');
     };
 
     return (
@@ -51,12 +51,29 @@ function Login() {
                     </div>
                 )}
 
-                <GoogleLogin
-                    onSuccess={handleSuccess}
-                    onError={handleError}
-                    theme="filled_blue"
-                    shape="pill"
-                />
+                <button
+                    onClick={handleLogin}
+                    style={{
+                        backgroundColor: '#38bdf8',
+                        color: 'white',
+                        border: 'none',
+                        padding: '0.75rem 2rem',
+                        borderRadius: '9999px',
+                        fontSize: '1rem',
+                        fontWeight: '600',
+                        cursor: 'pointer',
+                        transition: 'background-color 0.2s',
+                        width: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.5rem'
+                    }}
+                    onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0ea5e9'}
+                    onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#38bdf8'}
+                >
+                    Sign In
+                </button>
             </div>
         </div>
     );
