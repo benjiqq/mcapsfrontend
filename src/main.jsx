@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { PrivyProvider } from '@privy-io/react-auth'
 import { AuthProvider } from './contexts/AuthContext'
+import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
 
@@ -19,9 +20,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         },
       }}
     >
-      <AuthProvider>
-        <App />
-      </AuthProvider>
+      <Router basename="/app">
+        <AuthProvider>
+          <App />
+        </AuthProvider>
+      </Router>
     </PrivyProvider>
   </React.StrictMode>,
 )

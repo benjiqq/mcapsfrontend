@@ -1,5 +1,5 @@
-import { createContext, useContext, useState, useEffect } from 'react';
 import { usePrivy } from '@privy-io/react-auth';
+import { useNavigate } from 'react-router-dom';
 
 const AuthContext = createContext();
 
@@ -15,6 +15,14 @@ export function AuthProvider({ children }) {
     const { ready, authenticated, user: privyUser, login, logout: privyLogout, getAccessToken } = usePrivy();
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const navigate = useNavigate();
+
+    // Auto-redirect to home after successful login
+    useEffect(() => {
+        if (ready && authenticated && window.location.pathname.includes('/login')) {
+            navigate('/', { replace: true });
+        }
+    }, [ready, authenticated, navigate]);
 
     const syncWithBackend = async (privyUser, token) => {
         try {

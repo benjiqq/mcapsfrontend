@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { useAuth } from './contexts/AuthContext'
 import './App.css'
 import Home from './pages/Home'
@@ -44,9 +44,7 @@ function AppContent() {
 
 function App() {
   return (
-    <Router basename="/app">
-      <AppContent />
-    </Router>
+    <AppContent />
   )
 }
 
