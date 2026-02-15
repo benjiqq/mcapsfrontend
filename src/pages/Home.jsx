@@ -25,46 +25,50 @@ function Home() {
 
     const [packages, setPackages] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    React.useEffect(() => {
-        const fetchPackages = async () => {
-            try {
-                // Determine if we are running locally to decide on the API URL or use the proxy
-                // For now, hardcoding the import from api.js which uses localhost:8000
-                const { getPackages } = await import('../api');
-                const data = await getPackages(10);
+    const fetchPackages = async () => {
+        setLoading(true);
+        setError(null);
+        try {
+            // Determine if we are running locally to decide on the API URL or use the proxy
+            // For now, hardcoding the import from api.js which uses localhost:8000
+            const { getPackages } = await import('../api');
+            const data = await getPackages(10);
 
-                // Flatten the nested structure: data -> countries -> operators -> packages
-                const flattenedPackages = [];
-                if (data && data.data) {
-                    data.data.forEach(country => {
-                        country.operators.forEach(operator => {
-                            operator.packages.forEach(pkg => {
-                                flattenedPackages.push({
-                                    ...pkg,
-                                    country_code: country.country_code,
-                                    country_title: country.title,
-                                    operator_title: operator.title,
-                                    operator_type: operator.type,
-                                    operator_image: operator.image,
-                                    gradient_start: operator.gradient_start,
-                                    gradient_end: operator.gradient_end,
-                                    other_info: operator.other_info,
-                                    info: operator.info,
-                                    networks: operator.coverages.flatMap(c => c.networks.map(n => n.name)).join(', ')
-                                });
+            // Flatten the nested structure: data -> countries -> operators -> packages
+            const flattenedPackages = [];
+            if (data && data.data) {
+                data.data.forEach(country => {
+                    country.operators.forEach(operator => {
+                        operator.packages.forEach(pkg => {
+                            flattenedPackages.push({
+                                ...pkg,
+                                country_code: country.country_code,
+                                country_title: country.title,
+                                operator_title: operator.title,
+                                operator_type: operator.type,
+                                operator_image: operator.image,
+                                gradient_start: operator.gradient_start,
+                                gradient_end: operator.gradient_end,
+                                other_info: operator.other_info,
+                                info: operator.info,
+                                networks: operator.coverages.flatMap(c => c.networks.map(n => n.name)).join(', ')
                             });
                         });
                     });
-                }
-                setPackages(flattenedPackages);
-            } catch (error) {
-                console.error("Failed to load packages", error);
-            } finally {
-                setLoading(false);
+                });
             }
-        };
+            setPackages(flattenedPackages);
+        } catch (error) {
+            console.error("Failed to load packages", error);
+            setError(error.message || "Failed to load packages. Please try again later.");
+        } finally {
+            setLoading(false);
+        }
+    };
 
+    React.useEffect(() => {
         fetchPackages();
     }, []);
 
@@ -85,6 +89,19 @@ function Home() {
                 <div className="d-flex justify-content-center py-5">
                     <div className="spinner-border text-primary" style={{ width: '3.5rem', height: '3.5rem', borderWidth: '0.4rem' }} role="status">
                         <span className="visually-hidden">Loading plans...</span>
+                    </div>
+                </div>
+            ) : error ? (
+                <div className="text-center py-5">
+                    <div className="alert alert-danger d-inline-block px-5 py-4 rounded-4 shadow-sm" role="alert">
+                        <h4 className="alert-heading mb-3">Oops! Something went wrong</h4>
+                        <p className="mb-4">{error}</p>
+                        <button
+                            className="btn btn-primary px-4 py-2 rounded-pill fw-bold"
+                            onClick={fetchPackages}
+                        >
+                            Try Again
+                        </button>
                     </div>
                 </div>
             ) : (
@@ -154,7 +171,7 @@ function Home() {
                 </div>
             )}
 
-            {!loading && packages.length === 0 && (
+            {!loading && !error && packages.length === 0 && (
                 <div style={{ textAlign: 'center', margin: '2rem 0' }}>No plans available at the moment.</div>
             )}
         </div>

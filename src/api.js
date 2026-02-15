@@ -1,5 +1,5 @@
 
-const API_BASE_URL = 'https://api.libertyroam.com';
+const API_BASE_URL = 'https://api.libertyroam.com/invalid-path';
 
 const cache = {
   packages: {}, // Structure: { [limit]: { data, timestamp } }
