@@ -44,15 +44,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         app: resolve(__dirname, 'app/index.html'),
-      },
-      external: [
-        '@solana/kit',
-        '@solana/sysvars',
-        '@solana-program/system',
-        '@solana-program/token',
-        '@solana-program/token-2022',
-        '@solana-program/associated-token'
-      ]
+      }
     },
   }
 })

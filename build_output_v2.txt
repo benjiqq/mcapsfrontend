@@ -1,0 +1,996 @@
+vite v5.4.20 building for production...
+transforming...
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/use-export-wallet-CwQ5-CS4.mjs (1:5480): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/use-export-wallet-CwQ5-CS4.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/get-is-unified-wallet-C6sEzDpG.mjs (1:8215): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/get-is-unified-wallet-C6sEzDpG.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/get-is-unified-wallet-C6sEzDpG.mjs (1:8867): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/get-is-unified-wallet-C6sEzDpG.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index-C47JxA4c.mjs (1:35714): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index-C47JxA4c.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index-C47JxA4c.mjs (141:313): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index-C47JxA4c.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index-C47JxA4c.mjs (173:81617): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index-C47JxA4c.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index-C47JxA4c.mjs (174:35190): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index-C47JxA4c.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/HCaptchaWrapper-CUi9LJsp.mjs (1:205): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/HCaptchaWrapper-CUi9LJsp.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TurnstileWrapper-Co-t5mTh.mjs (1:217): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TurnstileWrapper-Co-t5mTh.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AuthenticateWithWalletScreen-Fa-n1Sey.mjs (1:1746): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AuthenticateWithWalletScreen-Fa-n1Sey.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AffirmativeConsentScreen-CZ3QtNmP.mjs (1:1974): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AffirmativeConsentScreen-CZ3QtNmP.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AllowlistRejectionScreen-DUd4GJIK.mjs (1:1516): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AllowlistRejectionScreen-DUd4GJIK.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AccountNotFoundScreen-Dty9AII6.mjs (1:1365): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AccountNotFoundScreen-Dty9AII6.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AwaitingEvmToSolBridgingScreen-DCpcHpQX.mjs (1:7661): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AwaitingEvmToSolBridgingScreen-DCpcHpQX.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AwaitingExternalEthereumTransferScreen-D1V2_vDk.mjs (1:9940): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AwaitingExternalEthereumTransferScreen-D1V2_vDk.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CaptchaScreen-BL1nWi7c.mjs (1:2106): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CaptchaScreen-BL1nWi7c.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CaptchaScreen-BL1nWi7c.mjs (1:3419): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CaptchaScreen-BL1nWi7c.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectLedgerScreen-CURsQoYz.mjs (1:3014): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectLedgerScreen-CURsQoYz.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CoinbaseOnrampStatusScreen-DhIZ3gwP.mjs (1:3645): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CoinbaseOnrampStatusScreen-DhIZ3gwP.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CoinbaseOnrampStatusScreen-DhIZ3gwP.mjs (1:3968): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CoinbaseOnrampStatusScreen-DhIZ3gwP.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CoinbaseOnrampStatusScreen-DhIZ3gwP.mjs (1:4505): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CoinbaseOnrampStatusScreen-DhIZ3gwP.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectOnlyLandingScreen-CBjbbuDg.mjs (1:1602): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectOnlyLandingScreen-CBjbbuDg.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CrossAppAuthScreen-V6LW9fie.mjs (1:2041): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CrossAppAuthScreen-V6LW9fie.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EmbeddedWalletOnAccountCreateScreen-DbiGNXpt.mjs (1:3624): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EmbeddedWalletOnAccountCreateScreen-DbiGNXpt.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EmbeddedWalletKeyExportScreen-B-6Lfc6D.mjs (21:742): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EmbeddedWalletKeyExportScreen-B-6Lfc6D.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AwaitingPasswordlessCodeScreen-DGAxwdL6.mjs (1:2758): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AwaitingPasswordlessCodeScreen-DGAxwdL6.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AwaitingPasswordlessCodeScreen-DGAxwdL6.mjs (1:5766): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/AwaitingPasswordlessCodeScreen-DGAxwdL6.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/RecoveryPasswordCreateScreen-B-dLBQVH.mjs (1:3474): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/RecoveryPasswordCreateScreen-B-dLBQVH.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EmbeddedWalletPasswordUpdateScreen-fA9JGXuz.mjs (1:2445): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EmbeddedWalletPasswordUpdateScreen-fA9JGXuz.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ErrorScreen-Ba4Ml9CI.mjs (1:4231): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ErrorScreen-Ba4Ml9CI.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ErrorScreen-Ba4Ml9CI.mjs (1:4712): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ErrorScreen-Ba4Ml9CI.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FarcasterSignerStatusScreen-B8IyPJhe.mjs (28:1100): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FarcasterSignerStatusScreen-B8IyPJhe.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundingEditAmountScreen-DeM_ClwN.mjs (1:1778): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundingEditAmountScreen-DeM_ClwN.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/InAppBrowserLoginNotPossible-7kqa69SP.mjs (1:1249): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/InAppBrowserLoginNotPossible-7kqa69SP.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectionStatusScreen-SAx7YO5y.mjs (1:3153): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectionStatusScreen-SAx7YO5y.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectionStatusScreen-SAx7YO5y.mjs (1:9425): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectionStatusScreen-SAx7YO5y.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/InstallWalletScreen-EfqvUoSZ.mjs (1:1236): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/InstallWalletScreen-EfqvUoSZ.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/InstallWalletScreen-EfqvUoSZ.mjs (1:2116): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/InstallWalletScreen-EfqvUoSZ.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundSolWalletWithExternalSolanaWallet-B3Y84dbg.mjs (1:2485): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundSolWalletWithExternalSolanaWallet-B3Y84dbg.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkEmailScreen-CQ5mnYS9.mjs (1:2065): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkEmailScreen-CQ5mnYS9.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkPhoneScreen-CVNSbTfD.mjs (1:1307): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkPhoneScreen-CVNSbTfD.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkPhoneScreen-CVNSbTfD.mjs (1:1668): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkPhoneScreen-CVNSbTfD.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LoginFailedScreen-B2KtCyAw.mjs (1:1375): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LoginFailedScreen-B2KtCyAw.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundingMethodSelectionScreen-Be8LIw6i.mjs (1:9942): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundingMethodSelectionScreen-Be8LIw6i.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkConflictScreen-B-yRqIRn.mjs (16:16): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkConflictScreen-B-yRqIRn.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkConflictScreen-B-yRqIRn.mjs (79:246): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkConflictScreen-B-yRqIRn.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkConflictScreen-B-yRqIRn.mjs (79:2961): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkConflictScreen-B-yRqIRn.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ManualTransferScreen-C2Rl54K3.mjs (1:5405): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ManualTransferScreen-C2Rl54K3.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaAuthEnrollmentFlowScreen-D6ujM0kh.mjs (1:3656): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaAuthEnrollmentFlowScreen-D6ujM0kh.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaAuthEnrollmentFlowScreen-D6ujM0kh.mjs (1:3902): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaAuthEnrollmentFlowScreen-D6ujM0kh.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaAuthEnrollmentFlowScreen-D6ujM0kh.mjs (1:4591): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaAuthEnrollmentFlowScreen-D6ujM0kh.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkPasskeyScreen-BfGROb2f.mjs (3:84): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkPasskeyScreen-BfGROb2f.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkPasskeyScreen-BfGROb2f.mjs (3:218): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/LinkPasskeyScreen-BfGROb2f.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MoonpayStatusScreen-u9OjnVb2.mjs (1:2885): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MoonpayStatusScreen-u9OjnVb2.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MoonpayStatusScreen-u9OjnVb2.mjs (1:3717): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MoonpayStatusScreen-u9OjnVb2.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MoonpayStatusScreen-u9OjnVb2.mjs (1:4035): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MoonpayStatusScreen-u9OjnVb2.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MoonpayStatusScreen-u9OjnVb2.mjs (1:4831): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MoonpayStatusScreen-u9OjnVb2.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/OAuthStatusScreen-C4KNGm-v.mjs (1:4260): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/OAuthStatusScreen-C4KNGm-v.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/PasskeySelectSignupOrLogin-DM959Ikc.mjs (1:2051): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/PasskeySelectSignupOrLogin-DM959Ikc.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaEnrollmentFlowScreen-gELi8Ppl.mjs (1:6519): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaEnrollmentFlowScreen-gELi8Ppl.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaEnrollmentFlowScreen-gELi8Ppl.mjs (1:6732): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaEnrollmentFlowScreen-gELi8Ppl.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaEnrollmentFlowScreen-gELi8Ppl.mjs (1:7288): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaEnrollmentFlowScreen-gELi8Ppl.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaEnrollmentFlowScreen-gELi8Ppl.mjs (1:7920): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaEnrollmentFlowScreen-gELi8Ppl.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaEnrollmentFlowScreen-gELi8Ppl.mjs (1:8621): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/MfaEnrollmentFlowScreen-gELi8Ppl.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/PasswordRecoveryScreen-BnkB7Xwe.mjs (1:2500): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/PasswordRecoveryScreen-BnkB7Xwe.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/RecoverySelectionScreen-CJG-J3Aj.mjs (7:2183): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/RecoverySelectionScreen-CJG-J3Aj.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/RecoverySelectionScreen-CJG-J3Aj.mjs (7:2358): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/RecoverySelectionScreen-CJG-J3Aj.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/RecoverySelectionScreen-CJG-J3Aj.mjs (7:2534): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/RecoverySelectionScreen-CJG-J3Aj.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SetAutomaticRecoveryScreen-CXNCqRU4.mjs (14:451): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SetAutomaticRecoveryScreen-CXNCqRU4.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SignRequestScreen-7t8KCRXP.mjs (8:241): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SignRequestScreen-7t8KCRXP.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SignRequestScreen-7t8KCRXP.mjs (8:2066): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SignRequestScreen-7t8KCRXP.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TelegramAuthScreen-D-cJY_dj.mjs (1:1886): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TelegramAuthScreen-D-cJY_dj.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TelegramAuthScreen-D-cJY_dj.mjs (1:4209): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TelegramAuthScreen-D-cJY_dj.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/RecoveryOAuthStatusScreen-DaP1Oh1u.mjs (1:8561): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/RecoveryOAuthStatusScreen-DaP1Oh1u.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransferFromWalletScreen-BdIo62Cg.mjs (1:3542): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransferFromWalletScreen-BdIo62Cg.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/UpdatePhoneScreen-C7fQ2ohl.mjs (1:1316): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/UpdatePhoneScreen-C7fQ2ohl.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/UpdatePhoneScreen-C7fQ2ohl.mjs (1:1738): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/UpdatePhoneScreen-C7fQ2ohl.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/UpdateEmailScreen-0TGU13Qv.mjs (1:2867): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/UpdateEmailScreen-0TGU13Qv.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index--X7RfrXS.mjs (12:10373): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index--X7RfrXS.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index--X7RfrXS.mjs (12:13175): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index--X7RfrXS.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index--X7RfrXS.mjs (12:13441): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index--X7RfrXS.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index--X7RfrXS.mjs (12:15571): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index--X7RfrXS.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index--X7RfrXS.mjs (12:15855): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/index--X7RfrXS.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/UserLimitReachedScreen-dLjGUBN-.mjs (1:1756): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/UserLimitReachedScreen-dLjGUBN-.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/StandardSignAndSendTransactionScreen-BIJeFjT1.mjs (20:11547): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/StandardSignAndSendTransactionScreen-BIJeFjT1.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/StandardSignAndSendTransactionScreen-BIJeFjT1.mjs (20:12555): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/StandardSignAndSendTransactionScreen-BIJeFjT1.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/QrCode-AKgpho6r.mjs (2:688): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/QrCode-AKgpho6r.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/QrCode-AKgpho6r.mjs (2:827): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/QrCode-AKgpho6r.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/QrCode-AKgpho6r.mjs (2:1087): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/QrCode-AKgpho6r.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/QrCode-AKgpho6r.mjs (16:133): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/QrCode-AKgpho6r.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs (1:503): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs (13:297): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs (39:94): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs (39:156): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs (39:227): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs (39:285): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs (62:137): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs (136:133): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs (136:528): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs (324:603): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ModalHeader-CvLNEZ0F.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectWalletView-BXqs6pWG.mjs (25:81): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectWalletView-BXqs6pWG.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ScreenLayout-kyRBwF5n.mjs (1:323): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ScreenLayout-kyRBwF5n.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ScreenLayout-kyRBwF5n.mjs (1:466): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ScreenLayout-kyRBwF5n.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ScreenLayout-kyRBwF5n.mjs (1:563): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ScreenLayout-kyRBwF5n.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundWalletMethodHeader-Ce0vLrUa.mjs (1:239): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundWalletMethodHeader-Ce0vLrUa.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransferOrBridgeLoadingScreen-C9hX5Ost.mjs (1:846): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransferOrBridgeLoadingScreen-C9hX5Ost.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/BridgeNetworkSelectionView-tyz86GlM.mjs (69:312): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/BridgeNetworkSelectionView-tyz86GlM.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TodoList-CgrU7uwu.mjs (15:227): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TodoList-CgrU7uwu.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TodoList-CgrU7uwu.mjs (16:0): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TodoList-CgrU7uwu.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TodoList-CgrU7uwu.mjs (16:132): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TodoList-CgrU7uwu.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TodoList-CgrU7uwu.mjs (16:204): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TodoList-CgrU7uwu.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/NetworkIcon-B48ilzF8.mjs (1:12201): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/NetworkIcon-B48ilzF8.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/NetworkIcon-B48ilzF8.mjs (1:12244): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/NetworkIcon-B48ilzF8.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectEmailForm-DvQJmoTc.mjs (1:1686): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/ConnectEmailForm-DvQJmoTc.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitch-5IOe4sIQ.mjs (1:64): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitch-5IOe4sIQ.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitch-5IOe4sIQ.mjs (1:10025): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitch-5IOe4sIQ.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/telegram-B-JqnkqZ.mjs (1:64): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/telegram-B-JqnkqZ.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitter-BoAxhlj6.mjs (1:7958): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitter-BoAxhlj6.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitter-BoAxhlj6.mjs (1:12540): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitter-BoAxhlj6.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitter-BoAxhlj6.mjs (1:13625): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitter-BoAxhlj6.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitter-BoAxhlj6.mjs (1:14609): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/twitter-BoAxhlj6.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (9:550): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (9:1016): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (11:3245): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (11:5062): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (13:305): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:1736): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:1898): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2058): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2122): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2190): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2237): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2301): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2367): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2433): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2495): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2557): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2622): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2690): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2758): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2825): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:2864): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:3026): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:3159): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (15:4532): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:1803): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:1963): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2121): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2185): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2253): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2300): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2364): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2430): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2497): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2565): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2632): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2694): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2756): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2821): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2888): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:2945): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs (21:3561): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CustomLandingScreenView-B4a5Rc9z.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SetWalletPasswordForm-Bns8qtXn.mjs (2:313): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SetWalletPasswordForm-Bns8qtXn.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SetWalletPasswordForm-Bns8qtXn.mjs (5:1029): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SetWalletPasswordForm-Bns8qtXn.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SetWalletPasswordForm-Bns8qtXn.mjs (12:530): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/SetWalletPasswordForm-Bns8qtXn.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CopyToClipboard-BGTSFnT3.mjs (1:509): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/CopyToClipboard-BGTSFnT3.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/OpenLink-DZHy38vr.mjs (1:143): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/OpenLink-DZHy38vr.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/to-ui-error-DKeOToXI.mjs (4:133): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/to-ui-error-DKeOToXI.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/to-ui-error-DKeOToXI.mjs (4:1378): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/to-ui-error-DKeOToXI.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/to-ui-error-DKeOToXI.mjs (4:2045): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/to-ui-error-DKeOToXI.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs (25:416): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs (44:112): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs (44:317): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs (44:553): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs (45:317): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs (45:469): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs (103:111): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionDetails-DhYW2qjK.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/PinInput-3SLvbnQa.mjs (169:3839): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/PinInput-3SLvbnQa.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/WalletLink-xufwYyQh.mjs (1:461): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/WalletLink-xufwYyQh.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/WalletLink-xufwYyQh.mjs (1:592): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/WalletLink-xufwYyQh.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/WalletLink-xufwYyQh.mjs (2:263): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/WalletLink-xufwYyQh.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EnrollTotp-D6VGtjIL.mjs (12:269): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EnrollTotp-D6VGtjIL.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EnrollTotp-D6VGtjIL.mjs (20:12815): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EnrollTotp-D6VGtjIL.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EnrollTotp-D6VGtjIL.mjs (65:196): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/EnrollTotp-D6VGtjIL.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/JsonTree-aPaJmPx7.mjs (1:346): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/JsonTree-aPaJmPx7.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs (10:102): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs (10:486): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs (37:116): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs (44:1070): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs (45:877): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs (70:833): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/TransactionErrorView-DtnhZ5P5.mjs" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/ox-virtual-b4021a8dc9/4/.yarn/berry/cache/ox-npm-0.6.9-121b35f608-10c0.zip/node_modules/ox/_esm/core/Address.js (6:21): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/ox-virtual-b4021a8dc9/4/.yarn/berry/cache/ox-npm-0.6.9-121b35f608-10c0.zip/node_modules/ox/_esm/core/Address.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/ox-virtual-b4021a8dc9/4/.yarn/berry/cache/ox-npm-0.6.9-121b35f608-10c0.zip/node_modules/ox/_esm/core/Base64.js (6:27): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/ox-virtual-b4021a8dc9/4/.yarn/berry/cache/ox-npm-0.6.9-121b35f608-10c0.zip/node_modules/ox/_esm/core/Base64.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/ox-virtual-b4021a8dc9/4/.yarn/berry/cache/ox-npm-0.6.9-121b35f608-10c0.zip/node_modules/ox/_esm/core/internal/cursor.js (2:21): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/ox-virtual-b4021a8dc9/4/.yarn/berry/cache/ox-npm-0.6.9-121b35f608-10c0.zip/node_modules/ox/_esm/core/internal/cursor.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+.yarn/__virtual__/ox-virtual-2188f09f2d/4/.yarn/berry/cache/ox-npm-0.9.3-d10ca3ae08-10c0.zip/node_modules/ox/_esm/core/Base64.js (6:27): A comment
+
+"/*#__PURE__*/"
+
+in ".yarn/__virtual__/ox-virtual-2188f09f2d/4/.yarn/berry/cache/ox-npm-0.9.3-d10ca3ae08-10c0.zip/node_modules/ox/_esm/core/Base64.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+✓ 5609 modules transformed.
+x Build failed in 2.93s
+error during build:
+.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundSolWalletWithExternalSolanaWallet-B3Y84dbg.mjs (1:969): "getTransferSolInstruction" is not exported by "__vite-optional-peer-dep:@solana-program/system:@privy-io/react-auth", imported by ".yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundSolWalletWithExternalSolanaWallet-B3Y84dbg.mjs".
+file: /Users/ben/projects/libroam/front/.yarn/__virtual__/@privy-io-react-auth-virtual-83572a6bf7/4/.yarn/berry/cache/@privy-io-react-auth-npm-3.13.1-1a5b022476-10c0.zip/node_modules/@privy-io/react-auth/dist/esm/FundSolWalletWithExternalSolanaWallet-B3Y84dbg.mjs:1:969
+
+1: import{jsx as e,jsxs as t,Fragment as a}from"react/jsx-runtime";import n from"@heroicons/react/24/outline/CheckCircleIcon";import{useState as o,useEffect as r}from"react";import{formatWalletAddress as s}from"@privy-io/js-sdk-core";import{B as i,P as l}from"./ModalHeader-CvLNEZ0F.mjs";import{b as m,c,R as u,e as d}from"./Layouts-BlFm53ED.mjs";import{C as p}from"./ScreenHeader-CHmc4-Lu.mjs";import{t as f}from"./FundWalletMethodHeader-Ce0vLrUa.mjs";import{I as g}from"./InjectedWalletIcon-DLcYOGDj.mjs";import{N as h}from"./index-Dq_xe9dz.mjs";import{L as I,V as w}from"./Value-tcJV9e0L.mjs";import{a as v,R as S}from"./Row-C9vrS4Zi.mjs";import{u as j,t as C}from"./context-CwMpvKNV.mjs";import{u as y,a as L,b as x}from"./internal-context-Z-fyxadS.mjs";import{a as k}from"./get-is-unified-wallet-C6sEzDpG.mjs";import{u as F,g as U}from"./useWallets-BwdySlks.mjs";import{u as T}from"./useGetTokenPrice-CgGm0Ecu.mjs";import{O as b}from"./analytics-mkkvFRju.mjs";import{getTransfe...
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+
+    at getRollupError (file:///Users/ben/.yarn/berry/cache/rollup-npm-4.52.5-c23b37a36e-10c0.zip/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///Users/ben/.yarn/berry/cache/rollup-npm-4.52.5-c23b37a36e-10c0.zip/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+    at Module.error (file:///Users/ben/.yarn/berry/cache/rollup-npm-4.52.5-c23b37a36e-10c0.zip/node_modules/rollup/dist/es/shared/node-entry.js:16939:16)
+    at Module.traceVariable (file:///Users/ben/.yarn/berry/cache/rollup-npm-4.52.5-c23b37a36e-10c0.zip/node_modules/rollup/dist/es/shared/node-entry.js:17391:29)
+    at ModuleScope.findVariable (file:///Users/ben/.yarn/berry/cache/rollup-npm-4.52.5-c23b37a36e-10c0.zip/node_modules/rollup/dist/es/shared/node-entry.js:15061:39)
+    at ChildScope.findVariable (file:///Users/ben/.yarn/berry/cache/rollup-npm-4.52.5-c23b37a36e-10c0.zip/node_modules/rollup/dist/es/shared/node-entry.js:5642:38)
+    at FunctionScope.findVariable (file:///Users/ben/.yarn/berry/cache/rollup-npm-4.52.5-c23b37a36e-10c0.zip/node_modules/rollup/dist/es/shared/node-entry.js:5642:38)
+    at FunctionBodyScope.findVariable (file:///Users/ben/.yarn/berry/cache/rollup-npm-4.52.5-c23b37a36e-10c0.zip/node_modules/rollup/dist/es/shared/node-entry.js:5642:38)
+    at ReturnValueScope.findVariable (file:///Users/ben/.yarn/berry/cache/rollup-npm-4.52.5-c23b37a36e-10c0.zip/node_modules/rollup/dist/es/shared/node-entry.js:5642:38)
+    at FunctionBodyScope.findVariable (file:///Users/ben/.yarn/berry/cache/rollup-npm-4.52.5-c23b37a36e-10c0.zip/node_modules/rollup/dist/es/shared/node-entry.js:5642:38)

@@ -16,42 +16,81 @@ export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    const syncWithBackend = async (privyUser, token) => {
+        try {
+            const response = await fetch(`${API_BASE_URL}/auth/google`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ token })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                const updatedUser = {
+                    id: privyUser.id,
+                    email: data.email,
+                    username: data.username,
+                    picture: data.picture,
+                    is_admin: data.is_admin
+                };
+                setUser(updatedUser);
+                localStorage.setItem('auth_data', JSON.stringify({
+                    user: updatedUser,
+                    expires_at: data.expires_at
+                }));
+            }
+        } catch (error) {
+            console.error('Failed to sync with backend:', error);
+        }
+    };
+
     // Sync Privy user with context user
     useEffect(() => {
-        if (ready) {
-            if (authenticated && privyUser) {
-                // Initialize user from Privy data
-                // We'll normalize these fields to match what the app expects
-                const userInfo = {
-                    id: privyUser.id,
-                    email: privyUser.email?.address || (privyUser.google?.email) || (privyUser.apple?.email) || '',
-                    username: privyUser.email?.address?.split('@')[0] || (privyUser.google?.name) || 'User',
-                    picture: privyUser.google?.picture || null,
-                    is_admin: false, // Will be updated if backend session exists
-                };
+        const handleSync = async () => {
+            if (ready) {
+                if (authenticated && privyUser) {
+                    // Check if we already have synced data in localStorage
+                    const stored = localStorage.getItem('auth_data');
+                    let existingUser = null;
+                    if (stored) {
+                        try {
+                            const { user: backendUser, expires_at } = JSON.parse(stored);
+                            if (Date.now() / 1000 < expires_at) {
+                                existingUser = backendUser;
+                            }
+                        } catch (e) { }
+                    }
 
-                // Check for existing backend session to get extra info like is_admin
-                const stored = localStorage.getItem('auth_data');
-                if (stored) {
-                    try {
-                        const { user: backendUser, expires_at } = JSON.parse(stored);
-                        if (Date.now() / 1000 < expires_at) {
-                            setUser({ ...userInfo, ...backendUser });
-                        } else {
-                            setUser(userInfo);
-                        }
-                    } catch (e) {
+                    if (existingUser && existingUser.id === privyUser.id) {
+                        setUser(existingUser);
+                    } else {
+                        // Initial partial user from Privy
+                        const userInfo = {
+                            id: privyUser.id,
+                            email: privyUser.email?.address || (privyUser.google?.email) || (privyUser.apple?.email) || '',
+                            username: privyUser.email?.address?.split('@')[0] || (privyUser.google?.name) || 'User',
+                            picture: privyUser.google?.picture || null,
+                            is_admin: false,
+                        };
                         setUser(userInfo);
+
+                        // Fetch real user info (including is_admin) from backend
+                        const token = await getAccessToken();
+                        if (token) {
+                            await syncWithBackend(privyUser, token);
+                        }
                     }
                 } else {
-                    setUser(userInfo);
+                    setUser(null);
+                    localStorage.removeItem('auth_data');
                 }
-            } else {
-                setUser(null);
-                localStorage.removeItem('auth_data');
+                setLoading(false);
             }
-            setLoading(false);
-        }
+        };
+
+        handleSync();
     }, [ready, authenticated, privyUser]);
 
     const loginWithPrivy = async () => {
