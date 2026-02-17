@@ -11,7 +11,7 @@ import './index.css'
 
 import * as Sentry from "@sentry/react";
 
-import PageLogger from "./components/PageLogger";
+import ActivityLogger from "./ActivityLogger";
 
 Sentry.init({
   dsn: "https://1169712dee45bdf518268e74d9fe5780@o4510899016695808.ingest.de.sentry.io/4510899018203216",
@@ -39,7 +39,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <GoogleOAuthProvider clientId={__GOOGLE_CLIENT_ID__}>
       <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
         <AuthProvider>
-          <PageLogger />
+          <ActivityLogger />
           <App />
         </AuthProvider>
       </Router>

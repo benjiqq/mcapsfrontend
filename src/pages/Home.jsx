@@ -6,26 +6,20 @@ import BuyPlanModal from '../components/BuyPlanModal';
 import logtail from '../logger';
 
 function Home() {
-    const { user, logout } = useAuth();
+    const { user, logout, ipData } = useAuth();
     const navigate = useNavigate();
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [selectedPackage, setSelectedPackage] = useState(null);
-
-    const handleAuthAction = () => {
-        if (user) {
-            logout();
-        } else {
-            navigate('/login');
-        }
-    };
 
     const handleOpenModal = (pkg) => {
-        logtail.info("Plan Selected", {
+        const ipInfo = ipData || {};
+        logtail.info(`Plan Selected: ${pkg.title} - ${pkg.country_title}`, {
             package: pkg.title,
             country: pkg.country_title,
             price: pkg.price,
             user_id: user?.id || 'anonymous',
-            user_email: user?.email || 'anonymous'
+            user_email: user?.email || 'anonymous',
+            ip: ipInfo.ip,
+            city: ipInfo.city,
+            country_name: ipInfo.country_name
         });
         setSelectedPackage(pkg);
         setIsModalOpen(true);

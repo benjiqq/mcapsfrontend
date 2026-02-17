@@ -15,7 +15,16 @@ const API_BASE_URL = window.location.origin === 'http://localhost:5173'
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [ipData, setIpData] = useState(null);
     const navigate = useNavigate();
+
+    // Fetch IP data on mount
+    useEffect(() => {
+        fetch('https://ipapi.co/json/')
+            .then(res => res.json())
+            .then(data => setIpData(data))
+            .catch(err => console.error("Failed to fetch IP data", err));
+    }, []);
 
     // Check for existing session on mount
     useEffect(() => {
@@ -95,6 +104,7 @@ export function AuthProvider({ children }) {
     const value = {
         user,
         loading,
+        ipData,
         isAuthenticated: !!user,
         loginWithGoogle,
         logout
