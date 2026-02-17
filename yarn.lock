@@ -733,6 +733,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@logtail/browser@npm:^0.5.6":
+  version: 0.5.6
+  resolution: "@logtail/browser@npm:0.5.6"
+  dependencies:
+    "@logtail/core": "npm:^0.5.6"
+    "@logtail/tools": "npm:^0.5.6"
+  checksum: 10c0/3cd26520c2fbee608ca9ef5d283dc52b882fdc9107b7482e101e222f80e329a94869906af594f91bda20dd5272abe347f64f5f0b314f0d5750ae4d51035ef5ac
+  languageName: node
+  linkType: hard
+
+"@logtail/core@npm:^0.5.6":
+  version: 0.5.6
+  resolution: "@logtail/core@npm:0.5.6"
+  dependencies:
+    "@logtail/tools": "npm:^0.5.6"
+    "@logtail/types": "npm:^0.5.6"
+    serialize-error: "npm:8.1.0"
+  checksum: 10c0/90542e18521589aec4dc3c1c0ed996a564417f3f05a78547641a058540648eb797e896ddd059a2fc51a3fabafc0720357dfca08885040158323c52712ba6b97c
+  languageName: node
+  linkType: hard
+
+"@logtail/tools@npm:^0.5.6":
+  version: 0.5.6
+  resolution: "@logtail/tools@npm:0.5.6"
+  dependencies:
+    "@logtail/types": "npm:^0.5.6"
+  checksum: 10c0/7a804560514b76b8cef264fc4fc265c37e8ef3fdc9be3fde02b07b87e131c1dec712462530a42db8a69a1dfbbbd40f6f75f543af2ffa418d37583d78aa800f98
+  languageName: node
+  linkType: hard
+
+"@logtail/types@npm:^0.5.6":
+  version: 0.5.6
+  resolution: "@logtail/types@npm:0.5.6"
+  checksum: 10c0/30933a1780605760c5da366d0648842f1e195369ea7516732940bea01a006e61844bd0880fd8fbe5963d09f24e1889a02c0592e8f9a8e84849b396d056ceb911
+  languageName: node
+  linkType: hard
+
 "@marsidev/react-turnstile@npm:^1.3.1":
   version: 1.4.2
   resolution: "@marsidev/react-turnstile@npm:1.4.2"
@@ -4197,6 +4234,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "crypto-prices-front@workspace:."
   dependencies:
+    "@logtail/browser": "npm:^0.5.6"
     "@popperjs/core": "npm:^2.11.8"
     "@privy-io/react-auth": "npm:^3.13.1"
     "@react-oauth/google": "npm:^0.13.4"
@@ -6697,6 +6735,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"serialize-error@npm:8.1.0":
+  version: 8.1.0
+  resolution: "serialize-error@npm:8.1.0"
+  dependencies:
+    type-fest: "npm:^0.20.2"
+  checksum: 10c0/8cfd89f43ca93e283c5f1d16178a536bdfac9bc6029f4a9df988610cc399bc4f2478d1f10ce40b9dff66b863a5158a19b438fbec929045c96d92174f6bca1e88
+  languageName: node
+  linkType: hard
+
 "set-blocking@npm:^2.0.0":
   version: 2.0.0
   resolution: "set-blocking@npm:2.0.0"
@@ -7069,6 +7116,13 @@ __metadata:
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^0.20.2":
+  version: 0.20.2
+  resolution: "type-fest@npm:0.20.2"
+  checksum: 10c0/dea9df45ea1f0aaa4e2d3bed3f9a0bfe9e5b2592bddb92eb1bf06e50bcf98dbb78189668cd8bc31a0511d3fc25539b4cd5c704497e53e93e2d40ca764b10bfc3
   languageName: node
   linkType: hard
 

@@ -11,12 +11,27 @@ import './index.css'
 
 import * as Sentry from "@sentry/react";
 
+import { Logtail } from "@logtail/browser";
+
 Sentry.init({
   dsn: "https://1169712dee45bdf518268e74d9fe5780@o4510899016695808.ingest.de.sentry.io/4510899018203216",
   // Setting this option to true will send default PII data to Sentry.
   // For example, automatic IP address collection on events
   sendDefaultPii: true
 });
+
+
+
+const logtail = new Logtail("TVMzyYeAtC8MLXsY59DU7p3E");
+
+logtail.error("Test error");
+logtail.info("Test Log message with structured data.", {
+  item: "Orange Soda",
+  price: 100.00
+});
+
+// Ensure that all logs are sent to Logtail
+logtail.flush()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
