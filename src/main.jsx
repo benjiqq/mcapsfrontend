@@ -11,7 +11,7 @@ import './index.css'
 
 import * as Sentry from "@sentry/react";
 
-import { Logtail } from "@logtail/browser";
+import PageLogger from "./components/PageLogger";
 
 Sentry.init({
   dsn: "https://1169712dee45bdf518268e74d9fe5780@o4510899016695808.ingest.de.sentry.io/4510899018203216",
@@ -22,16 +22,7 @@ Sentry.init({
 
 
 
-const logtail = new Logtail("TVMzyYeAtC8MLXsY59DU7p3E");
 
-logtail.error("Test error");
-logtail.info("Test Log message with structured data.", {
-  item: "Orange Soda",
-  price: 100.00
-});
-
-// Ensure that all logs are sent to Logtail
-logtail.flush()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -48,6 +39,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <GoogleOAuthProvider clientId={__GOOGLE_CLIENT_ID__}>
       <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
         <AuthProvider>
+          <PageLogger />
           <App />
         </AuthProvider>
       </Router>

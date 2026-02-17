@@ -3,6 +3,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import BuyPlanModal from '../components/BuyPlanModal';
+import logtail from '../logger';
 
 function Home() {
     const { user, logout } = useAuth();
@@ -19,6 +20,13 @@ function Home() {
     };
 
     const handleOpenModal = (pkg) => {
+        logtail.info("Plan Selected", {
+            package: pkg.title,
+            country: pkg.country_title,
+            price: pkg.price,
+            user_id: user?.id || 'anonymous',
+            user_email: user?.email || 'anonymous'
+        });
         setSelectedPackage(pkg);
         setIsModalOpen(true);
     };

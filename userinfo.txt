@@ -1,0 +1,71 @@
+Network & Device
+
+IP address (public IP)
+
+Approximate location (country, region, city via GeoIP)
+
+ISP / ASN
+
+Connection type (mobile, broadband, corporate proxy, VPN/Tor detection heuristics)
+
+User agent string → OS, browser, device model class
+
+Screen resolution & viewport
+
+Device memory, CPU cores (via browser APIs, limited)
+
+Browser & System Fingerprint
+
+Cookies (first-party and third-party if allowed)
+
+LocalStorage / SessionStorage
+
+Installed fonts, plugins, extensions (partially restricted now)
+
+Canvas/WebGL fingerprint
+
+Timezone, language, locale
+
+Do Not Track flag
+
+Color scheme preference (dark/light)
+
+Battery status (mostly deprecated/restricted)
+
+Behavior on the Site
+
+Pages visited, timestamps
+
+Clicks, scroll depth, mouse movement
+
+Form inputs (even if not submitted, if scripts capture it)
+
+Session duration
+
+Referrer URL (where you came from)
+
+Downloaded files, video watch metrics
+
+Errors encountered
+
+Account / Provided Data (if logged in or submitted)
+
+Name, email, phone, address
+
+Payment details (handled by processors)
+
+Order history
+
+Messages/support tickets
+
+Uploaded files
+
+Tracking & Advertising Data
+
+Ad IDs (if mobile web/app)
+
+Cross-site tracking via pixels (e.g., Meta Platforms Pixel, Google Analytics)
+
+Interest profiles inferred from browsing
+
+Conversion tracking
