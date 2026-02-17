@@ -2,38 +2,42 @@ import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import './Navbar.css';
 
-const Navbar = () => {
-    const { user, logout } = useAuth();
+const AdminNavbar = () => {
+    const { user } = useAuth();
     const navigate = useNavigate();
-
-    const handleAuthAction = () => {
-        if (user) {
-            logout();
-        } else {
-            navigate('/login');
-        }
-    };
 
     return (
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-brand">
-                    Lib<span>Roam</span>
+                    <img src="/encryptSIM.logo.green.svg" alt="EncryptSIM Logo" width="50" height="50" style={{ marginRight: '10px' }} />
+                    EncryptSIM
                 </Link>
                 <div className="navbar-right">
                     <div className="navbar-links">
                         <NavLink
-                            to="/"
+                            to="/admin/monitor"
                             className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
-                            end
                         >
-                            Shop
+                            Monitor
                         </NavLink>
                         <NavLink
-                            to="/account"
+                            to="/admin/packages"
                             className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
                         >
-                            Account
+                            Packages
+                        </NavLink>
+                        <NavLink
+                            to="/admin/orders"
+                            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+                        >
+                            Orders
+                        </NavLink>
+                        <NavLink
+                            to="/admin/submit-order"
+                            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+                        >
+                            Submit Order
                         </NavLink>
                     </div>
 
@@ -43,9 +47,6 @@ const Navbar = () => {
                                 {user.picture && (
                                     <img src={user.picture} alt={user.username} className="nav-avatar" />
                                 )}
-                                <button className="nav-auth-btn logout" onClick={logout}>
-                                    Log out
-                                </button>
                             </>
                         ) : (
                             <button className="nav-auth-btn" onClick={() => navigate('/login')}>
@@ -59,4 +60,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default AdminNavbar;

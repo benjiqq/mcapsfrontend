@@ -10,7 +10,7 @@ export default defineConfig({
       name: 'app-rewrite',
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
-          if (req.url.startsWith('/app') && !req.url.includes('.')) {
+          if ((req.url.startsWith('/app') || req.url.startsWith('/admin')) && !req.url.includes('.')) {
             req.url = '/app/index.html'
           }
           next()
@@ -43,7 +43,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        app: resolve(__dirname, 'app/index.html'),
+        // app: resolve(__dirname, 'app/index.html'),
       }
     },
   }

@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
+import { GoogleLogin } from '@react-oauth/google';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
     const [error, setError] = useState(null);
-    const { login, user } = useAuth();
+    const { loginWithGoogle, user } = useAuth();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -13,9 +14,9 @@ function Login() {
         }
     }, [user, navigate]);
 
-    const handleLogin = async () => {
+    const handleLogin = async (credentialResponse) => {
         try {
-            await login();
+            await loginWithGoogle(credentialResponse);
         } catch (err) {
             setError('Login failed. Please try again.');
         }
@@ -51,29 +52,18 @@ function Login() {
                     </div>
                 )}
 
-                <button
-                    onClick={handleLogin}
-                    style={{
-                        backgroundColor: '#38bdf8',
-                        color: 'white',
-                        border: 'none',
-                        padding: '0.75rem 2rem',
-                        borderRadius: '9999px',
-                        fontSize: '1rem',
-                        fontWeight: '600',
-                        cursor: 'pointer',
-                        transition: 'background-color 0.2s',
-                        width: '100%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: '0.5rem'
-                    }}
-                    onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0ea5e9'}
-                    onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#38bdf8'}
-                >
-                    Sign In
-                </button>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+                    <GoogleLogin
+                        onSuccess={handleLogin}
+                        onError={() => {
+                            setError('Login Failed');
+                        }}
+                        theme="filled_blue"
+                        shape="pill"
+                        size="large"
+                        width="300"
+                    />
+                </div>
             </div>
         </div>
     );

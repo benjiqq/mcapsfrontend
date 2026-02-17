@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibertyRoam Partners</title>
+    <link rel="stylesheet" href="src/index.css">
+    <style>
+        :root {
+            --primary-glow: rgba(255, 90, 0, 0.1);
+            --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .wrap {
+            padding: 4rem 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-title {
+            font-size: 2.25rem;
+            font-weight: 850;
+            margin: 0;
+            letter-spacing: -0.05em;
+            background: linear-gradient(135deg, #fff 0%, var(--text-muted) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--text);
+        }
+
+        .btn-invite {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.4rem;
+            border-radius: 0.75rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 12px rgba(255, 90, 0, 0.2);
+        }
+
+        .btn-invite:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 90, 0, 0.3);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        /* Stats Section */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--glass-border);
+            border-radius: 1.5rem;
+            padding: 1.75rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+            background: var(--surface-hover);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .stat-value {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-top: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .stat-value.highlight {
+            color: var(--primary);
+        }
+
+        /* Section Panels */
+        .panel {
+            background: var(--surface);
+            border: 1px solid var(--glass-border);
+            border-radius: 2rem;
+            padding: 2.5rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .panel-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        /* Tiers Grid */
+        .tiers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tier-card {
+            background: var(--bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+
+        .tier-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background: var(--surface-hover);
+            transform: scale(1.02);
+        }
+
+        .tier-card.active {
+            border-color: var(--primary);
+            background: var(--primary-glow);
+            box-shadow: 0 0 40px rgba(255, 90, 0, 0.05);
+        }
+
+        .tier-card.active::after {
+            content: "Current Tier";
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            background: var(--primary);
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 0.6rem;
+            border-radius: 2rem;
+            text-transform: uppercase;
+        }
+
+        .tier-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .tier-req {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        .tier-rate {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-top: 1.5rem;
+            color: var(--text);
+        }
+
+        .tier-rate span {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .tier-action {
+            margin-top: 2rem;
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 1rem;
+            border: none;
+            background: var(--surface-hover);
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .tier-action.upgrade {
+            background: var(--primary);
+        }
+
+        .tier-action.upgrade:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .tier-action.current {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            cursor: default;
+        }
+
+        /* Links List */
+        .links-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .link-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 1rem;
+            padding: 1rem 1.5rem;
+            transition: all 0.2s;
+        }
+
+        .link-row:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            background: var(--surface-hover);
+        }
+
+        .link-text {
+            font-family: monospace;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            user-select: all;
+        }
+
+        .btn-copy {
+            background: var(--surface-hover);
+            border: 1px solid var(--glass-border);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-copy:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateX(4px);
+        }
+
+        /* Table Styling */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 0 -0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 0.95rem;
+        }
+
+        th {
+            text-align: left;
+            padding: 1rem 1.5rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        td {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .col-date {
+            color: var(--text-muted);
+        }
+
+        .col-plan {
+            font-weight: 500;
+        }
+
+        .col-country {
+            color: var(--text-muted);
+        }
+
+        .col-comm {
+            color: var(--primary);
+            font-weight: 700;
+            text-align: right;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 2rem;
+                align-items: flex-start;
+            }
+
+            .header-nav {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <header>
+                <h1 class="brand-title">LibertyRoam Partners</h1>
+                <div class="header-nav">
+                    <a class="nav-link">Docs</a>
+                    <a class="nav-link">Support</a>
+                    <button class="btn-invite">Invite Partner</button>
+                </div>
+            </header>
+
+            <main>
+                <!-- Overview Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label">Total Earnings</div>
+                        <div class="stat-value">$18,420</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Active Referrals</div>
+                        <div class="stat-value">1,284</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Conversion Rate</div>
+                        <div class="stat-value">6.3%</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Current Tier</div>
+                        <div class="stat-value highlight">Elite</div>
+                    </div>
+                </div>
+
+                <!-- Tiers Panel -->
+                <section class="panel">
+                    <h2 class="panel-heading">Partner Tiers</h2>
+                    <div class="tiers-grid">
+                        <div class="tier-card">
+                            <div class="tier-name">Starter</div>
+                            <div class="tier-req">No stake required</div>
+                            <div class="tier-rate">10%<span>commission</span></div>
+                            <button class="tier-action upgrade">Upgrade</button>
+                        </div>
+
+                        <div class="tier-card">
+                            <div class="tier-name">Pro</div>
+                            <div class="tier-req">Stake 5,000 LR</div>
+                            <div class="tier-rate">20%<span>commission</span></div>
+                            <button class="tier-action upgrade">Upgrade</button>
+                        </div>
+
+                        <div class="tier-card active">
+                            <div class="tier-name">Elite</div>
+                            <div class="tier-req">Stake 25,000 LR</div>
+                            <div class="tier-rate">30%<span>commission</span></div>
+                            <button class="tier-action current">Current Plan</button>
+                        </div>
+
+                        <div class="tier-card">
+                            <div class="tier-name">Sovereign</div>
+                            <div class="tier-req">Stake 100,000 LR</div>
+                            <div class="tier-rate">40%<span>commission</span></div>
+                            <button class="tier-action upgrade">Upgrade</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Referral Links -->
+                <section class="panel">
+                    <h2 class="panel-heading">Referral Links</h2>
+                    <div class="links-stack">
+                        <div class="link-row">
+                            <div class="link-text">https://libertyroam.com/?ref=atlasnomad</div>
+                            <button class="btn-copy">Copy Link</button>
+                        </div>
+                        <div class="link-row">
+                            <div class="link-text">https://libertyroam.com/europe?ref=atlasnomad</div>
+                            <button class="btn-copy">Copy Link</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Activity Table -->
+                <section class="panel">
+                    <h2 class="panel-heading">Recent Conversions</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Plan</th>
+                                    <th>Country</th>
+                                    <th style="text-align: right;">Commission</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-date">Feb 12</td>
+                                    <td class="col-plan">Global 10GB</td>
+                                    <td class="col-country">Japan</td>
+                                    <td class="col-comm">$18.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-date">Feb 11</td>
+                                    <td class="col-plan">Europe 5GB</td>
+                                    <td class="col-country">Germany</td>
+                                    <td class="col-comm">$12.50</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-date">Feb 10</td>
+                                    <td class="col-plan">Asia 20GB</td>
+                                    <td class="col-country">Thailand</td>
+                                    <td class="col-comm">$22.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
