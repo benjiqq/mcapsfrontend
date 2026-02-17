@@ -18,7 +18,8 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-brand">
-                    Lib<span>Roam</span>
+                    <img src="/encryptSIM.logo.green.svg" alt="EncryptSIM Logo" width="50" height="50" style={{ marginRight: '10px' }} />
+                    EncryptSIM
                 </Link>
                 <div className="navbar-right">
                     <div className="navbar-links">

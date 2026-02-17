@@ -18,7 +18,10 @@ export const getPackages = async (limit = 5) => {
   }
 
   try {
-    const response = await fetch(`${API_BASE_URL}/packages?limit=${limit}`);
+    //predefined packages not all
+    const url = `${API_BASE_URL}//definedpackages?limit=${limit}`;
+    console.log("Fetching packages from:", url);
+    const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`Error fetching packages: ${response.statusText}`);
     }

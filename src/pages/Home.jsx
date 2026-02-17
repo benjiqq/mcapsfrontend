@@ -39,25 +39,48 @@ function Home() {
             // Flatten the nested structure: data -> countries -> operators -> packages
             const flattenedPackages = [];
             if (data && data.data) {
-                data.data.forEach(country => {
-                    country.operators.forEach(operator => {
-                        operator.packages.forEach(pkg => {
-                            flattenedPackages.push({
-                                ...pkg,
-                                country_code: country.country_code,
-                                country_title: country.title,
-                                operator_title: operator.title,
-                                operator_type: operator.type,
-                                operator_image: operator.image,
-                                gradient_start: operator.gradient_start,
-                                gradient_end: operator.gradient_end,
-                                other_info: operator.other_info,
-                                info: operator.info,
-                                networks: operator.coverages.flatMap(c => c.networks.map(n => n.name)).join(', ')
-                            });
+                // Check if the data is already flat (array of packages without 'operators')
+                const isFlat = data.data.length > 0 && !data.data[0].operators;
+
+                if (isFlat) {
+                    data.data.forEach(pkg => {
+                        flattenedPackages.push({
+                            ...pkg,
+                            country_code: pkg.country_code || 'US',
+                            country_title: pkg.country_title || 'United States',
+                            operator_title: pkg.operator_title || pkg.operator,
+                            operator_type: pkg.type,
+                            operator_image: pkg.operator_image, // use if available
+                            gradient_start: pkg.gradient_start,
+                            gradient_end: pkg.gradient_end,
+                            other_info: pkg.other_info,
+                            info: Array.isArray(pkg.info) ? pkg.info : [pkg.fair_usage_policy].filter(Boolean),
+                            networks: pkg.networks || ''
                         });
                     });
-                });
+                } else {
+                    data.data.forEach(country => {
+                        if (country.operators) {
+                            country.operators.forEach(operator => {
+                                operator.packages.forEach(pkg => {
+                                    flattenedPackages.push({
+                                        ...pkg,
+                                        country_code: country.country_code,
+                                        country_title: country.title,
+                                        operator_title: operator.title,
+                                        operator_type: operator.type,
+                                        operator_image: operator.image,
+                                        gradient_start: operator.gradient_start,
+                                        gradient_end: operator.gradient_end,
+                                        other_info: operator.other_info,
+                                        info: operator.info,
+                                        networks: operator.coverages ? operator.coverages.flatMap(c => c.networks.map(n => n.name)).join(', ') : ''
+                                    });
+                                });
+                            });
+                        }
+                    });
+                }
             }
             setPackages(flattenedPackages);
         } catch (error) {
