@@ -25,7 +25,7 @@
 ## 🔑 Google Client ID
 
 ```
-274625475064-19i6t9n82di0k1qkhfhd3bn4vjsgr8o7.apps.googleusercontent.com
+730685688668-hd4cgfo1cv9a7gii4ao5l2234abm3uvn.apps.googleusercontent.com
 ```
 
 **Source**: `client_secret.json` in workspace root

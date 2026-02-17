@@ -93,7 +93,7 @@ Root/
 ### From `client_secret.json`:
 ```json
 {
-  "client_id": "274625475064-19i6t9n82di0k1qkhfhd3bn4vjsgr8o7.apps.googleusercontent.com",
+  "client_id": "730685688668-hd4cgfo1cv9a7gii4ao5l2234abm3uvn.apps.googleusercontent.com",
   "project_id": "stoked-edition-483004-s5",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
@@ -106,7 +106,7 @@ Root/
 ### Configured In:
 **`src/main.jsx`**
 ```javascript
-const GOOGLE_CLIENT_ID = '274625475064-19i6t9n82di0k1qkhfhd3bn4vjsgr8o7.apps.googleusercontent.com'
+const GOOGLE_CLIENT_ID = '730685688668-hd4cgfo1cv9a7gii4ao5l2234abm3uvn.apps.googleusercontent.com'
 ```
 
 ---
@@ -600,7 +600,7 @@ Then open `http://localhost:5173/login` in your browser! 🎯
 ---
 
 **Version**: 1.0.0  
-**Google Client ID**: 274625475064-19i6t9n82di0k1qkhfhd3bn4vjsgr8o7.apps.googleusercontent.com  
+**Google Client ID**: 730685688668-hd4cgfo1cv9a7gii4ao5l2234abm3uvn.apps.googleusercontent.com  
 **Date**: January 1, 2025  
 **Status**: ✅ Complete & Ready for Use
 

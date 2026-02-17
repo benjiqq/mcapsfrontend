@@ -30,7 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         },
       }}
     > */}
-    <GoogleOAuthProvider clientId="274625475064-19i6t9n82di0k1qkhfhd3bn4vjsgr8o7.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={__GOOGLE_CLIENT_ID__}>
       <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
         <AuthProvider>
           <App />

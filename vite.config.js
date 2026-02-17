@@ -35,9 +35,10 @@ export default defineConfig({
       '/coinstats': 'https://api.mcaps.com'
     },
     // Configure proxy to handle /assets/count properly
-    define: {
-      'process.env': {}
-    }
+  },
+  define: {
+    'process.env': {},
+    '__GOOGLE_CLIENT_ID__': JSON.stringify('730685688668-hd4cgfo1cv9a7gii4ao5l2234abm3uvn.apps.googleusercontent.com')
   },
   build: {
     rollupOptions: {
